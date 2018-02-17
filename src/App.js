@@ -22,7 +22,10 @@ class App extends Component {
               <Route path="/:x" render={() => <Header />} />
               <Switch>
                 <Route path="/wprowadzenie" component={IntroductionPage} />
-                <Route path="/znajdz-roznice" component={FindDifference} />
+                <Route
+                  path="/znajdz-roznice"
+                  component={() => <FindDifference visible={true} />}
+                />
                 <Route path="/" component={LandingPage} />
                 {/* TODO handle no match */}
               </Switch>
