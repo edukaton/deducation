@@ -23,7 +23,8 @@ export const postsByVisibility = visible => [
           wnioskowaniem w oparciu o pojedynczy przypadek. Jedynie
           przeprowadzenie badań w sposób zgodny z obowiązującą metodą naukową
           może pozwolić nam na uogólnianie uzyskanych wyników na większe
-          populację.">
+          populację."
+            visible={visible}>
             wnioskować
           </Highlight>, iż ich spożywanie jest w stanie znacznie przedłużyć
           średnią długość życia mieszkańców naszego miasta. Również nasz{' '}
