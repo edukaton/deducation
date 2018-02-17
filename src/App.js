@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 
 import GApp from 'grommet/components/App';
 import GArticle from 'grommet/components/Article';
@@ -22,13 +22,13 @@ class App extends Component {
             <React.Fragment>
               <Route path="/:x" render={() => <Header />} />
               <Switch>
+                <Route exact path="/" component={LandingPage} />
                 <Route path="/wprowadzenie" component={IntroductionPage} />
                 <Route
                   path="/znajdz-roznice"
                   component={() => <FindDifference />}
                 />
-                <Route path="/" component={LandingPage} />
-                {/* TODO handle no match */}
+                <Redirect to="/" />
               </Switch>
             </React.Fragment>
           </Router>
