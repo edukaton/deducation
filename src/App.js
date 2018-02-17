@@ -1,19 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { PureComponent } from 'react';
+import GApp from 'grommet/components/App';
+import GArticle from 'grommet/components/Article';
+import GSection from 'grommet/components/Section';
+import GImage from 'grommet/components/Image';
+import GFooter from 'grommet/components/Footer';
+import GTitle from 'grommet/components/Title';
+import GHeading from 'grommet/components/Heading';
+import sherlock from './sherlock.svg';
 import './App.css';
 
-class App extends Component {
+class App extends PureComponent {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <GApp centered={false}>
+        <GArticle className="article">
+          <GSection>
+            <GImage src={sherlock} alt="sherlock" size="small" />
+            <GTitle>
+              <GHeading>
+                Dedukacja
+              </GHeading>
+            </GTitle>
+          </GSection>
+        </GArticle>
+        <GFooter />
+      </GApp>
     );
   }
 }
