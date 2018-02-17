@@ -11,28 +11,19 @@ body,
   a {
     color: $color-apple;
   }
+
+  .button {
+    border: $color-orange;
+    background-color: $color-orange;
+    padding: 10px 20px;
+  }
 }
 
 .article {
   display: flex;
 
-  .section {
-    flex-grow: 1;
-    color: $color-white;
+  .header {
     background-color: $color-blue-whale;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .paragraph {
-      color: $color-white;
-    }
-
-    .button {
-      border: $color-orange;
-      background-color: $color-orange;
-      padding: 10px 20px;
-    }
 
     .logo {
       fill: $color-white;
@@ -41,10 +32,54 @@ body,
     }
   }
 
+  .section {
+    flex-grow: 1;
+    color: $color-blue-whale;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    .paragraph {
+      color: $color-blue-whale;
+      max-width: none;
+      text-align: justify;
+
+      .highlight {
+        font-weight: bold;
+        color: $color-apple;
+      }
+    }
+
+    .logo {
+      fill: $color-white;
+      stroke: $color-white;
+      margin: 20px;
+    }
+
+    .icon {
+      fill: $color-blue-whale;
+      stroke: $color-blue-whale;
+    }
+
+    &.landing {
+      color: $color-white;
+      background-color: $color-blue-whale;
+      flex-direction: column;
+
+      .paragraph {
+        color: $color-white;
+      }
+    }
+  }
+
   .footer {
     display: flex;
-    justify-content: flex-end;
-    background-color: $color-alto;
+    justify-content: center;
+    background-color: $color-white;
+    border-top: 1px solid $color-gull-gray;
 
     & > * {
       margin: 20px 40px;
