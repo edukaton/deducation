@@ -1,5 +1,53 @@
 @import "consts.scss";
 
+html,
+body,
+#root,
+.app,
 .article {
-  background-color: $color-blue-whale;
+  height: 100%;
+  font-family: Open Sans, sans-serif;
+
+  a {
+    color: $color-apple;
+  }
+}
+
+.article {
+  display: flex;
+
+  .section {
+    flex-grow: 1;
+    color: $color-white;
+    background-color: $color-blue-whale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .paragraph {
+      color: $color-white;
+    }
+
+    .button {
+      border: $color-orange;
+      background-color: $color-orange;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      fill: $color-white;
+      stroke: $color-white;
+      margin: 20px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $color-alto;
+
+    & > * {
+      margin: 20px 40px;
+    }
+  }
 }
