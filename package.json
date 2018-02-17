@@ -2,7 +2,7 @@
   "name": "deducation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://edukaton.github.io/dedukacja",
+  "homepage": "https://edukaton.github.io/deducation",
   "dependencies": {
     "grommet": "^1.10.1",
     "gh-pages": "^1.1.0",
