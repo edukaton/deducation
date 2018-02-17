@@ -4,8 +4,6 @@ import GSection from 'grommet/components/Section';
 import GParagraph from 'grommet/components/Paragraph';
 import GHeading from 'grommet/components/Heading';
 
-import Highlight from './Highlight';
-
 class DifferencePost extends Component {
   render() {
     const {heading, content} = this.props;

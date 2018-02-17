@@ -1,4 +1,4 @@
-@import "consts.scss";
+@import 'consts.scss';
 
 html,
 body,
@@ -47,7 +47,7 @@ body,
       max-width: none;
       text-align: justify;
 
-      .highlight {
+      .marked {
         font-weight: bold;
         color: $color-apple;
       }
