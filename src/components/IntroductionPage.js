@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react';
 import {Link} from 'react-router-dom';
+import _ from 'lodash';
 
 import GSection from 'grommet/components/Section';
 import GHeading from 'grommet/components/Heading';
@@ -55,8 +56,8 @@ class LandingPage extends PureComponent {
             przed zalewem niesprawdzonych danych. Twoja przygoda zaczyna się
             teraz!
           </GParagraph>
-          <Link to="/">
-            <GButton className="button" primary={true}>
+          <Link to="/znajdz-roznice">
+            <GButton className="button" primary={true} onClick={_.noop}>
               Dalej
             </GButton>
           </Link>

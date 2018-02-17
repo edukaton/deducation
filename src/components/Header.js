@@ -12,10 +12,12 @@ class Header extends Component {
   render() {
     return (
       <GHeader className="header">
-        <GImage src={sherlock} size="small" className="logo" />
         <Link to="/">
+          <GImage src={sherlock} size="small" className="logo" />
+        </Link>
+        <Link to="/wprowadzenie">
           <GButton className="button" primary={true} onClick={_.noop}>
-            Dedukacja
+            Wprowadzenie
           </GButton>
         </Link>
         <Link to="/znajdz-roznice">
