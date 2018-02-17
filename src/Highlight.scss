@@ -6,7 +6,7 @@ $color-status-critical: #ff324d;
   background-color: $color-status-unknown;
   border-radius: 5px;
   padding: 0.1em;
-  margin: 0.1em;
+  margin: 0.2em;
   cursor: default;
   font-weight: 400;
 
@@ -23,4 +23,8 @@ $color-status-critical: #ff324d;
   &:hover {
     filter: brightness(120%);
   }
+}
+
+.highlight__tip {
+  display: none;
 }

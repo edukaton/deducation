@@ -7,18 +7,26 @@ import GParagraph from 'grommet/components/Paragraph';
 import GHeading from 'grommet/components/Heading';
 
 import DifferencePost from './DifferencePost';
+import Highlight from './Highlight';
 
-const posts = {
+const postsByVisibility = visible => ({
   fake: {
     heading: <div>NIESAMOWITE ODKRYCIE BRYTYJSKICH NAUKOWCÓW!</div>,
     content: (
       <div>
-        Jeden z mieszkańców Londynu przez ponad połowę swojego życia spożywał
-        liście tytoniu. Dożył aż 103 lat. Możemy wnioskować, iż ich spożywanie
-        jest w stanie znacznie przedłużyć średnią długość życia mieszkańców
-        naszego miasta. Również nasz burmistrz mówi, że tak jest, podkreśla
-        także, że osoby podważające wiarygodność informacji zostały przekupione
-        w wyniku istniejącego spisku.
+        Jeden z{' '}
+        <Highlight
+          type="critical"
+          hint="Tytuł przeczy treści artykułu."
+          visible={visible}>
+          mieszkańców
+        </Highlight>{' '}
+        Londynu przez ponad połowę swojego życia spożywał liście tytoniu. Dożył
+        aż 103 lat. Możemy wnioskować, iż ich spożywanie jest w stanie znacznie
+        przedłużyć średnią długość życia mieszkańców naszego miasta. Również
+        nasz burmistrz mówi, że tak jest, podkreśla także, że osoby podważające
+        wiarygodność informacji zostały przekupione w wyniku istniejącego
+        spisku.
       </div>
     ),
   },
@@ -46,10 +54,12 @@ const posts = {
       </div>
     ),
   },
-};
+});
 
 class FindDifference extends Component {
   render() {
+    const {visible} = this.props;
+    const posts = postsByVisibility(visible);
     return (
       <GArticle colorIndex="light-2" full={true}>
         <GSection colorIndex="light-1">

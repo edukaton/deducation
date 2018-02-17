@@ -6,18 +6,26 @@ import './Highlight.css';
 
 let count = 0;
 
-const Highlight = ({children, type, hint}) => {
+const Highlight = ({children, type, hint, visible}) => {
   const id = count++;
   return (
     <React.Fragment>
-      {hint && (
-        <GTip target={`highlight--${id}`} colorIndex="light-2">
-          {hint}
-        </GTip>
-      )}
+      {visible &&
+        hint && (
+          <div className="highlight__tip">
+            <GTip
+              className="highlight__tip"
+              target={`highlight--${id}`}
+              colorIndex="light-2">
+              {hint}
+            </GTip>
+          </div>
+        )}
       <span
-        className={`highlight highlight--${id} ${type &&
-          `highlight--${type}`}`}>
+        className={
+          visible &&
+          `highlight highlight--${id} ${type && `highlight--${type}`}`
+        }>
         {children}
       </span>
     </React.Fragment>
