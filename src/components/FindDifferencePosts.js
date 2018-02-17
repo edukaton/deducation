@@ -26,7 +26,7 @@ export const postsByVisibility = visible => [
           populację.">
             wnioskować
           </Highlight>, iż ich spożywanie jest w stanie znacznie przedłużyć
-          średnią długość życia mieszkańców naszego miasta. Również nasz
+          średnią długość życia mieszkańców naszego miasta. Również nasz{' '}
           <Highlight
             type="critical"
             hint="Powołanie się na regułę autorytetu. Polega ona na większej
@@ -74,9 +74,8 @@ export const postsByVisibility = visible => [
           na wybór tychże symptomów.
           <Highlight
             type="ok"
-            hint="Grupę badawczą stanowiło 201 osób: 100 policjantów (40 kobiet i
-          60 mężczyzn) w średnim wieku 37,4 lat oraz 101 psychologów, (72 kobiet
-          i 29 mężczyzn)"
+            hint="Opis grupy badawczej – dzięki niemu wiemy, że wysnute wnioski
+            dotyczą konkretnej grupy osób, a nie ogółu społeczeństwa."
             visible={visible}>
             Grupę badawczą stanowiło 201 osób: 100 policjantów (40 kobiet i 60
             mężczyzn) w średnim wieku 37,4 lat oraz 101 psychologów, (72 kobiet

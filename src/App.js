@@ -8,7 +8,7 @@ import GAnchor from 'grommet/components/Anchor';
 
 import LandingPage from './components/LandingPage';
 import IntroductionPage from './components/IntroductionPage';
-import FindDifference from './components/FindDiffrence';
+import FindDifference from './components/FindDifference';
 import Header from './components/Header';
 
 import './App.css';
