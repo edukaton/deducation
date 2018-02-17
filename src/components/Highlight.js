@@ -24,18 +24,15 @@ class Highlight extends Component {
         {visible &&
           showTip &&
           hint && (
-            <div className="highlight__tip">
-              <GTip
-                className="highlight__tip"
-                target={`highlight--${id}`}
-                colorIndex="light-2"
-                onClose={this.toggleTip}>
-                {hint}
-              </GTip>
-            </div>
+            <GTip
+              colorIndex="neutral-4"
+              target={`highlight--${id}`}
+              onClose={this.toggleTip}>
+              <span className="tip">{hint}</span>
+            </GTip>
           )}
         <span
-          onClick={this.toggleTip}
+          onClick={visible && this.toggleTip}
           className={
             visible &&
             `highlight highlight--${id} ${type && `highlight--${type}`}`

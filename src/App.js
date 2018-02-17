@@ -8,7 +8,7 @@ import GAnchor from 'grommet/components/Anchor';
 
 import LandingPage from './components/LandingPage';
 import IntroductionPage from './components/IntroductionPage';
-import FindDifference from './FindDiffrence';
+import FindDifference from './components/FindDiffrence';
 import Header from './components/Header';
 
 import './App.css';
@@ -25,7 +25,7 @@ class App extends Component {
                 <Route path="/wprowadzenie" component={IntroductionPage} />
                 <Route
                   path="/znajdz-roznice"
-                  component={() => <FindDifference visible={true} />}
+                  component={() => <FindDifference />}
                 />
                 <Route path="/" component={LandingPage} />
                 {/* TODO handle no match */}

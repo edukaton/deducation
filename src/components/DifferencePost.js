@@ -4,9 +4,11 @@ import GSection from 'grommet/components/Section';
 import GParagraph from 'grommet/components/Paragraph';
 import GHeading from 'grommet/components/Heading';
 
+import './DifferencePost.css';
+
 class DifferencePost extends Component {
   render() {
-    const {heading, content} = this.props;
+    const {heading, content, ...rest} = this.props;
     return (
       <GSection
         margin="medium"
@@ -15,8 +17,9 @@ class DifferencePost extends Component {
         size={{
           height: 'large',
           width: 'large',
-        }}>
-        <GHeading tag="h4">{heading}</GHeading>
+        }}
+        {...rest}>
+        <GHeading tag="h3">{heading}</GHeading>
         <GParagraph>{content}</GParagraph>
       </GSection>
     );
