@@ -26,9 +26,9 @@ body,
     background-color: $color-blue-whale;
 
     .logo {
-      fill: $color-white;
-      stroke: $color-white;
-      margin: 20px;
+      height: 50px;
+      width: auto;
+      margin: 10px 20px;
     }
   }
 
@@ -42,6 +42,10 @@ body,
     align-items: center;
     padding: 50px;
 
+    .image {
+      margin: 50px;
+    }
+
     .paragraph {
       color: $color-blue-whale;
       max-width: none;
@@ -51,17 +55,6 @@ body,
         font-weight: bold;
         color: $color-apple;
       }
-    }
-
-    .logo {
-      fill: $color-white;
-      stroke: $color-white;
-      margin: 20px;
-    }
-
-    .icon {
-      fill: $color-blue-whale;
-      stroke: $color-blue-whale;
     }
 
     &.landing {

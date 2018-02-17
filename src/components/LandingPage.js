@@ -6,14 +6,15 @@ import GSection from 'grommet/components/Section';
 import GHeading from 'grommet/components/Heading';
 import GParagraph from 'grommet/components/Paragraph';
 import GButton from 'grommet/components/Button';
+import GImage from 'grommet/components/Image';
 
-import Logo from './Logo';
+import sherlock from '../assets/sherlock.svg';
 
 class LandingPage extends PureComponent {
   render() {
     return (
       <GSection className="section landing">
-        <Logo size="huge" />
+        <GImage src={sherlock} size="small" />
         <GHeading align="center" strong={true}>
           Dedukacja
         </GHeading>

@@ -4,14 +4,15 @@ import {Link} from 'react-router-dom';
 import _ from 'lodash';
 import GHeader from 'grommet/components/Header';
 import GButton from 'grommet/components/Button';
+import GImage from 'grommet/components/Image';
 
-import Logo from './Logo';
+import sherlock from '../assets/sherlock.svg';
 
 class Header extends Component {
   render() {
     return (
       <GHeader className="header">
-        <Logo size="medium" />
+        <GImage src={sherlock} size="small" className="logo" />
         <Link to="/">
           <GButton className="button" primary={true} onClick={_.noop}>
             Dedukacja
