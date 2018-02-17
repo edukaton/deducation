@@ -1,0 +1,26 @@
+$color-status-unknown: #a8a8a8;
+$color-status-ok: #8cc800;
+$color-status-critical: #ff324d;
+
+.highlight {
+  background-color: $color-status-unknown;
+  border-radius: 5px;
+  padding: 0.1em;
+  margin: 0.1em;
+  cursor: default;
+  font-weight: 400;
+
+  &--ok {
+    color: #fff;
+    background-color: $color-status-ok;
+  }
+
+  &--critical {
+    color: #fff;
+    background-color: $color-status-critical;
+  }
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
