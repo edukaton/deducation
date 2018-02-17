@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import GSection from 'grommet/components/Section';
 import GColumns from 'grommet/components/Columns';
 import GAnimate from 'grommet/components/Animate';
+import GNotification from 'grommet/components/Notification';
 
 import DifferencePost from './DifferencePost';
 import FindDifferenceIntro from './FindDifferenceIntro';
@@ -38,10 +39,15 @@ class FindDifference extends Component {
     ) : (
       <React.Fragment>
         <GAnimate
-          visible={visible}
-          keep={true}
-          enter={{animation: 'fade', duration: 1000, delay: 0}}>
-          <FindDifferenceNotification correct={correct[postNumber]} />
+          enter={{animation: 'fade', duration: 1000, delay: 0}}
+          leave={{animation: 'fade', duration: 1000, delay: 0}}>
+          {visible ? (
+            <FindDifferenceNotification correct={correct[postNumber]} />
+          ) : (
+            <GNotification>
+              Wybierz tekst budzący twoje podejrzenia.
+            </GNotification>
+          )}
         </GAnimate>
         <GSection colorIndex="light-2">
           <GAnimate enter={{animation: 'slide-up', duration: 1000, delay: 0}}>
