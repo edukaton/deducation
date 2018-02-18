@@ -5,6 +5,7 @@ import GNotification from 'grommet/components/Notification';
 import murder from '../assets/murder.svg';
 
 import './CrimeScene.css';
+import NavButtons from "./NavButtons";
 
 const evidence = [
   {
@@ -53,6 +54,7 @@ class CrimeScene extends Component {
             </div>
           ))}
         </div>
+        <NavButtons prev="/lampki/cwiczenie" next="/znajdz-roznice/wstep" />
       </div>
     );
   }

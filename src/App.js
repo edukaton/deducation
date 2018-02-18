@@ -33,6 +33,20 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={LandingPage} />
                 <Route path="/wprowadzenie" component={IntroductionPage} />
+                <Route path="/lampki/wstep" component={LightsIntroPage} />
+                <Route path="/lampki/teoria" component={LightsTheoryPage} />
+                <Route
+                  path="/lampki/instrukcja"
+                  component={LightsInstructionPage}
+                />
+                <Route
+                  path="/lampki/cwiczenie"
+                  component={LightsExercisePage}
+                />
+                <Route
+                  path="/quiz/teoria"
+                  component={CrimeScene}
+                />
                 <Route path="/znajdz-roznice/wstep" component={MemoIntro} />
                 <Route path="/znajdz-roznice/teoria" component={MemoCards} />
                 <Route
@@ -47,16 +61,6 @@ class App extends Component {
                 <Route
                   path="/znajdz-roznice/cwiczenie"
                   component={FindDifferencePage}
-                />
-                <Route path="/lampki/wstep" component={LightsIntroPage} />
-                <Route path="/lampki/teoria" component={LightsTheoryPage} />
-                <Route
-                  path="/lampki/instrukcja"
-                  component={LightsInstructionPage}
-                />
-                <Route
-                  path="/lampki/cwiczenie"
-                  component={LightsExercisePage}
                 />
                 <Route path="/exit" component={ExitPage} />
                 <Redirect to="/" />

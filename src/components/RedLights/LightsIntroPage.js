@@ -19,7 +19,7 @@ class LightsIntroPage extends PureComponent {
             naukową – wskaż właściwą kolumnę tabeli.
           </GParagraph>
         </GSection>
-        <NavButtons prev="/znajdz-roznice/cwiczenie" next="/lampki/teoria" />
+        <NavButtons prev="/wprowadzenie" next="/lampki/teoria" />
       </div>
     );
   }

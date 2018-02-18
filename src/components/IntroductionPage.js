@@ -41,7 +41,7 @@ class LandingPage extends PureComponent {
           </GSection>
           <GImage src={bigBen} size="small" className="image" />
         </div>
-        <NavButtons prev="/" next="/znajdz-roznice/wstep"/>
+        <NavButtons prev="/" next="/lampki/wstep"/>
       </div>
     );
   }

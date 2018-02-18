@@ -20,7 +20,7 @@ class MemoIntro extends PureComponent {
             Dobry detektyw powinien charakteryzować się znakomitą pamięcią. Szybko powinieneś przyswoić tę wiedzę. Twoim zadaniem jest dopasowanie definicji do przykładów poprzez odkrywanie kolejnych kafelków.
           </GParagraph>
         </GSection>
-        <NavButtons prev="/wprowadzenie" next="/znajdz-roznice/teoria" />
+        <NavButtons prev="/quiz/teoria" next="/znajdz-roznice/teoria" />
       </div>
     );
   }

@@ -99,7 +99,7 @@ class FindDifferencePage extends Component {
             <GPulse onClick={this.next} icon={<GFormNext />} />
           </GAnimate>
         </GSection>
-        <NavButtons prev="/znajdz-roznice/instrukcja" next="/lampki/wstep" />
+        <NavButtons prev="/znajdz-roznice/instrukcja" next="/exit" />
       </div>
     );
   }
