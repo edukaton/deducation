@@ -10,7 +10,7 @@ import NavButtons from "./NavButtons";
 const cards = shuffle([
   {
     text:
-      'Efekt potwierdzenia - tendencja do poszukiwania wyłącznie faktów potwierdzających posiadaną opinię, a nie weryfikujących ją.',
+      'Efekt potwierdzenia - tendencja do poszukiwania wyłącznie faktów aprobujących posiadaną opinię, a nie weryfikujących ją.',
     answerNumber: 1,
   },
   {
@@ -117,7 +117,7 @@ class MemoCards extends Component {
             />
           ))}
         </div>
-        <NavButtons prev="/wprowadzenie" next="/znajdz-roznice/instrukcja"/>
+        <NavButtons prev="/znajdz-roznice/wstep" next="/znajdz-roznice/instrukcja"/>
       </div>
     );
   }

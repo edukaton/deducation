@@ -23,14 +23,14 @@ class LandingPage extends PureComponent {
               nadchodzącą ulewą.
             </GParagraph>
             <GParagraph className="paragraph" size="large" margin="small">
-              Mimo to, życie społecznościowe wydaje się tętnić. Facebookowe ulice
+              Mimo to życie społecznościowe wydaje się tętnić. Facebookowe ulice
               pełne są dyliżansów pędzących na zbliżające się eventy, młodzi
               chłopcy z gazetami rozdają najnowsze podcasty.
             </GParagraph>
             <GParagraph className="paragraph" size="large" margin="small">
               Sieciową sielankę przerywa jednak niepokojąca informacja o
               najnowszym dokonaniu profesora Moriarty’ego – z jego laboratorium
-              wyciekły, toksyczne
+              wyciekły toksyczne,
               <b> fatalne fake newsy</b>.
             </GParagraph>
             <GParagraph className="paragraph" size="large" margin="small">
@@ -41,7 +41,7 @@ class LandingPage extends PureComponent {
           </GSection>
           <GImage src={bigBen} size="small" className="image" />
         </div>
-        <NavButtons prev="/" next="/znajdz-roznice/teoria"/>
+        <NavButtons prev="/" next="/znajdz-roznice/wstep"/>
       </div>
     );
   }

@@ -16,6 +16,8 @@ import LightsInstructionPage from './components/RedLights/LightsInstructionPage'
 import LightsTheoryPage from './components/RedLights/LightsTheoryPage';
 import ExitPage from './components/ExitPage';
 import MemoCards from './components/MemoCards';
+import MemoIntro from './components/MemoIntro';
+import LightsIntroPage from "./components/RedLights/LightsIntroPage";
 
 import './App.css';
 
@@ -31,8 +33,8 @@ class App extends Component {
                 <Route exact path="/" component={LandingPage} />
                 <Route path="/wprowadzenie" component={IntroductionPage} />
                 <Route
-                  path="/znajdz-roznice/teoria"
-                  component={MemoCards}
+                  path="/znajdz-roznice/wstep"
+                  component={MemoIntro}
                 />
                 <Route
                   path="/znajdz-roznice/teoria"
@@ -46,6 +48,7 @@ class App extends Component {
                   path="/znajdz-roznice/cwiczenie"
                   component={FindDifferencePage}
                 />
+                <Route path="/lampki/wstep" component={LightsIntroPage} />
                 <Route path="/lampki/teoria" component={LightsTheoryPage} />
                 <Route
                   path="/lampki/instrukcja"

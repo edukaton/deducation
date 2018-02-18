@@ -32,13 +32,6 @@ class LightsTheoryPage extends Component {
           </GNotification>
         )}
         <GSection margin="small" pad="small" className="section">
-          <GParagraph className="paragraph" align="center" size="large">
-            Moriarty zaczął działać w ukryciu i mieszać fakty z informacjami
-            wątpliwej jakości. Pomóż poczciwemu Gladstone’owi wytropić wiedzę
-            naukową – wskaż właściwą kolumnę tabeli.
-          </GParagraph>
-        </GSection>
-        <GSection margin="small" pad="small" className="section">
           <GAnimate enter={{animation: 'slide-up', duration: 1000, delay: 0}}>
             <div className="columns">
               <GSection
@@ -108,7 +101,7 @@ class LightsTheoryPage extends Component {
           </GAnimate>
         </GSection>
         <NavButtons
-          prev="/znajdz-roznice/cwiczenie"
+          prev="/lampki/wstep"
           next="/lampki/instrukcja"
         />
       </div>
