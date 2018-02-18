@@ -7,15 +7,6 @@
     flex-basis: 25%;
   }
   &__item {
-    /*
-    //$color-blue-whale: #033a46;
-    //$color-gull-gray: #9ab2b4;
-    //$color-apple: #53bf46;
-    //$color-orange: #fc6a2a;
-    //$color-black: #000;
-    //$color-silver: #c1c1c1;
-    //$color-wild-sand: #f5f5f5;
-    */
     &--1 {
       .memo-card__face {
         background-color: lighten($color-cello, 70%);
@@ -43,7 +34,7 @@
     }
     &--6 {
       .memo-card__face {
-        background-color: lighten($color-cello, 30%);
+        background-color: lighten($color-hippie-blue, 30%);
       }
     }
   }
