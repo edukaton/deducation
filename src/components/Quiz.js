@@ -125,8 +125,8 @@ class Quiz extends Component {
             )}
         </div>
         <NavButtons
-          prev="/znajdz-roznice/wstep"
-          next="/znajdz-roznice/instrukcja"
+          prev="/quiz/teoria"
+          next="/znajdz-roznice/wstep"
         />
       </div>
     );

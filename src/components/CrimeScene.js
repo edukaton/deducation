@@ -54,7 +54,7 @@ class CrimeScene extends Component {
             </div>
           ))}
         </div>
-        <NavButtons prev="/lampki/cwiczenie" next="/znajdz-roznice/wstep" />
+        <NavButtons prev="/lampki/cwiczenie" next="/quiz" />
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
-import {Link} from 'react-router-dom';
 
 import GApp from 'grommet/components/App';
 import GArticle from 'grommet/components/Article';
