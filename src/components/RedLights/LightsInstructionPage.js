@@ -10,7 +10,7 @@ class LightsInstructionPage extends PureComponent {
   render() {
     return (
       <div className="content-wrapper">
-        <GSection className="section">
+        <GSection className="section post">
           <GHeading margin="medium" align="center" strong={true}>
             Lampki
           </GHeading>

@@ -8,7 +8,7 @@ import NavButtons from '../NavButtons';
 
 const FindDifferenceIntro = ({hideIntro}) => (
   <div className="content-wrapper">
-    <GSection className="section" align="center">
+    <GSection className="section post" align="center">
       <GHeading margin="medium" align="center" strong={true}>
         Znajdź różnicę
       </GHeading>

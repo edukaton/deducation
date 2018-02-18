@@ -13,7 +13,7 @@ class LandingPage extends PureComponent {
     return (
       <div className="content-wrapper">
         <div className="columns">
-          <GSection className="section">
+          <GSection className="section post">
             <GHeading margin="medium" align="center" strong={true}>
               Wstęp
             </GHeading>

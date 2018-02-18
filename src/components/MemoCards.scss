@@ -18,7 +18,7 @@
     */
     &--1 {
       .memo-card__face {
-        background-color: lighten($color-blue-whale, 70%);
+        background-color: lighten($color-cello, 70%);
       }
     }
     &--2 {
@@ -43,7 +43,7 @@
     }
     &--6 {
       .memo-card__face {
-        background-color: lighten($color-blue-whale, 30%);
+        background-color: lighten($color-cello, 30%);
       }
     }
   }

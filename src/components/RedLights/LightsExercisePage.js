@@ -121,8 +121,8 @@ class LightsExercisePage extends Component {
   render() {
     return (
       <div className="content-wrapper">
-        <GSection className="section">
-          <GHeading margin="medium" align="center" strong={true}>
+        <GSection className="section post">
+          <GHeading margin="medium" align="center" strong={true} className="heading">
             Przyczłapnik bulwulatora zaatakował Londyn!
           </GHeading>
           <GParagraph className="paragraph" align="center" size="medium">
@@ -134,8 +134,8 @@ class LightsExercisePage extends Component {
             {this.error('Starsi mieszkańcy')}
             {this.collapse(
               'pamiętają czasy, w których podobna choroba zabiła ich bliskich. Na szczęście dzielą ' +
-                'się wiedzą jak sobie z nią poradzić! Większość z nich zaleca picie ciepłego mleka rozcieńczonego wodą' +
-                'oraz dodatkiem cytryny bogatej w dużą ilość lewoskrętnej witaminy C.',
+              'się wiedzą jak sobie z nią poradzić! Większość z nich zaleca picie ciepłego mleka rozcieńczonego ' +
+              'wodą oraz dodatkiem cytryny bogatej w dużą ilość lewoskrętnej witaminy C.',
             )}
             {this.error('Od dawna wiadomo, że')}
             {this.collapse('dzięki temu Wasz organizm')}
