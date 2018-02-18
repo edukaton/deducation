@@ -4,6 +4,8 @@ $card-height: 200px;
 $card-pad: 1em;
 
 .memo-card {
+  font-family: Raleway, sans-serif;
+
   perspective: 1000;
   height: $card-height;
   padding: $card-pad;
@@ -44,6 +46,7 @@ $card-pad: 1em;
   &__face {
     transform: rotateY(180deg);
     &--quote {
+      font-family: Cutive, sans-serif;
       font-style: italic;
     }
   }
