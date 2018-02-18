@@ -5,6 +5,7 @@ import {shuffle} from 'lodash';
 import MemoCard from './MemoCard';
 
 import './MemoCards.css';
+import NavButtons from "./NavButtons";
 
 const cards = shuffle([
   {
@@ -103,17 +104,20 @@ class MemoCards extends Component {
   render() {
     const {selected, revealed} = this.state;
     return (
-      <div className="memo-grid">
-        {cards.map(({text, answerNumber, quote}) => (
-          <MemoCard
-            className={`memo-grid__item memo-grid__item--${answerNumber}`}
-            selected={selected[text]}
-            text={text}
-            quote={quote}
-            reveal={revealed[answerNumber]}
-            onClick={this.handleSelect(text, answerNumber)}
-          />
-        ))}
+      <div className="content-wrapper">
+        <div className="memo-grid">
+          {cards.map(({text, answerNumber, quote}) => (
+            <MemoCard
+              className={`memo-grid__item memo-grid__item--${answerNumber}`}
+              selected={selected[text]}
+              text={text}
+              quote={quote}
+              reveal={revealed[answerNumber]}
+              onClick={this.handleSelect(text, answerNumber)}
+            />
+          ))}
+        </div>
+        <NavButtons prev="/wprowadzenie" next="/znajdz-roznice/instrukcja"/>
       </div>
     );
   }

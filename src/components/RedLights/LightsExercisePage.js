@@ -184,7 +184,7 @@ class LightsExercisePage extends Component {
             )}
           </GParagraph>
         </GSection>
-        <NavButtons prev="/lampki/instrukcja" next="/" />
+        <NavButtons prev="/lampki/instrukcja" next="/exit" />
       </div>
     );
   }

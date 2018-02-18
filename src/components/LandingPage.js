@@ -26,7 +26,7 @@ class LandingPage extends PureComponent {
           </GParagraph>
           <Link to="/wprowadzenie">
             <GButton className="button" primary={true} onClick={_.noop}>
-              Rozpocznij
+              Rozpocznij śledztwo
             </GButton>
           </Link>
         </GBox>

@@ -10,7 +10,7 @@ const FindDifferenceIntro = ({hideIntro}) => (
   <div className="content-wrapper">
     <GSection className="section post" align="center">
       <GHeading margin="medium" align="center" strong={true}>
-        Znajdź różnicę
+        Znajdź różnice
       </GHeading>
       <GParagraph
         className="paragraph"
@@ -23,7 +23,7 @@ const FindDifferenceIntro = ({hideIntro}) => (
         Wskaż, który autor jest rzeczywiście winny i ocal Londyn.
       </GParagraph>
     </GSection>
-    <NavButtons prev="/wprowadzenie" next="/znajdz-roznice/cwiczenie"/>
+    <NavButtons prev="/znajdz-roznice/teoria" next="/znajdz-roznice/cwiczenie"/>
   </div>
 );
 

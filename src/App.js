@@ -14,6 +14,7 @@ import FindDifferencePage from './components/FindDifference/FindDifferencePage';
 import LightsExercisePage from './components/RedLights/LightsExercisePage';
 import LightsInstructionPage from './components/RedLights/LightsInstructionPage';
 import LightsTheoryPage from './components/RedLights/LightsTheoryPage';
+import ExitPage from './components/ExitPage';
 import MemoCards from './components/MemoCards';
 
 import './App.css';
@@ -29,10 +30,9 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={LandingPage} />
                 <Route path="/wprowadzenie" component={IntroductionPage} />
-                {/*TODO */}
                 <Route
                   path="/znajdz-roznice/teoria"
-                  component={FindDifferenceIntro}
+                  component={MemoCards}
                 />
                 <Route
                   path="/znajdz-roznice/instrukcja"
@@ -51,7 +51,7 @@ class App extends Component {
                   path="/lampki/cwiczenie"
                   component={LightsExercisePage}
                 />
-                <Route path="/memo" component={MemoCards} />
+                <Route path="/exit" component={ExitPage} />
                 <Redirect to="/" />
               </Switch>
             </React.Fragment>
