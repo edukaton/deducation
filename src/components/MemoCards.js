@@ -10,8 +10,13 @@ import NavButtons from './NavButtons';
 
 const cards = shuffle([
   {
-    text:
-      <span><span className="marked">Efekt potwierdzenia</span> - tendencja do poszukiwania wyłącznie faktów aprobujących posiadaną opinię, a nie weryfikujących ją.</span>,
+    text: (
+      <span>
+        <span className="marked">Efekt potwierdzenia</span> - tendencja do
+        poszukiwania wyłącznie faktów aprobujących posiadaną opinię, a nie
+        weryfikujących ją.
+      </span>
+    ),
     answerNumber: 1,
   },
   {
@@ -20,8 +25,13 @@ const cards = shuffle([
     answerNumber: 1,
   },
   {
-    text:
-      <span><span className="marked">Efekt zaprzeczania</span> – krytyczne  weryfikowanie informacji, które zaprzeczają dotychczasowym opiniom, przy bezkrytycznym akceptowaniu tych, które je potwierdzają.</span>,
+    text: (
+      <span>
+        <span className="marked">Efekt zaprzeczania</span> – krytyczne
+        weryfikowanie informacji, które zaprzeczają dotychczasowym opiniom, przy
+        bezkrytycznym akceptowaniu tych, które je potwierdzają.
+      </span>
+    ),
     answerNumber: 2,
   },
   {
@@ -31,8 +41,13 @@ const cards = shuffle([
     answerNumber: 2,
   },
   {
-    text:
-      <span><span className="marked">Zaniedbywanie miarodajności</span> - dokonywanie oceny na podstawie danych, o których wiadomo, że nie mają znaczenia statystycznego.</span>,
+    text: (
+      <span>
+        <span className="marked">Zaniedbywanie miarodajności</span> -
+        dokonywanie oceny na podstawie danych, o których wiadomo, że nie mają
+        znaczenia statystycznego.
+      </span>
+    ),
     answerNumber: 3,
   },
   {
@@ -42,8 +57,13 @@ const cards = shuffle([
     answerNumber: 3,
   },
   {
-    text:
-      <span><span className="marked">Reguła autorytetu</span> - jesteśmy bardziej skłonni słuchać wskazań i zaleceń osób, które postrzegamy jako autorytety.</span>,
+    text: (
+      <span>
+        <span className="marked">Reguła autorytetu</span> - jesteśmy bardziej
+        skłonni słuchać wskazań i zaleceń osób, które postrzegamy jako
+        autorytety.
+      </span>
+    ),
     answerNumber: 4,
   },
   {
@@ -52,8 +72,12 @@ const cards = shuffle([
     answerNumber: 4,
   },
   {
-    text:
-      <span><span className="marked">Efekt przywiązania</span> – korzystanie ze zbyt mało różnorodnych źródeł informacji.</span>,
+    text: (
+      <span>
+        <span className="marked">Efekt przywiązania</span> – korzystanie ze zbyt
+        mało różnorodnych źródeł informacji.
+      </span>
+    ),
     answerNumber: 5,
   },
   {
@@ -62,8 +86,13 @@ const cards = shuffle([
     answerNumber: 5,
   },
   {
-    text:
-      <span><span className="marked">Efekt skupienia</span> - przywiązywanie zbyt dużej wagi do jednego szczegółu, co zaburza racjonalną ocenę użyteczności innego.</span>,
+    text: (
+      <span>
+        <span className="marked">Efekt skupienia</span> - przywiązywanie zbyt
+        dużej wagi do jednego szczegółu, co zaburza racjonalną ocenę
+        użyteczności innego.
+      </span>
+    ),
     answerNumber: 6,
   },
   {
@@ -107,7 +136,7 @@ class MemoCards extends Component {
     return (
       <div className="content-wrapper">
         <GNotification closer={true} className="notification">
-          Zbadaj miejsce zbrodni. Podglądaj dowody oznaczone cyframi.
+          Dopasuj błędy poznawcze do wypowiedzi.
         </GNotification>
         <div className="memo-grid">
           {cards.map(({text, answerNumber, quote}) => (
