@@ -12,6 +12,7 @@ import IntroductionPage from './components/IntroductionPage';
 import FindDifference from './components/FindDifference';
 import LightsExercisePage from './components/LightsExercisePage';
 import LightsInstructionPage from './components/LightsInstructionPage';
+import LightsTheoryPage from './components/LightsTheoryPage';
 
 import './App.css';
 
@@ -30,8 +31,9 @@ class App extends Component {
                   path="/znajdz-roznice"
                   component={() => <FindDifference />}
                 />
-                <Route path="/lampki-instrukcja" component={LightsInstructionPage} />
-                <Route path="/lampki-cwiczenie" component={LightsExercisePage} />
+                <Route path="/lampki/teoria" component={LightsTheoryPage} />
+                <Route path="/lampki/instrukcja" component={LightsInstructionPage} />
+                <Route path="/lampki/cwiczenie" component={LightsExercisePage} />
                 <Redirect to="/" />
               </Switch>
             </React.Fragment>

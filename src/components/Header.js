@@ -22,10 +22,10 @@ class Header extends Component {
         </Link>
         <Link to="/znajdz-roznice">
           <GButton className="button" primary={true} onClick={_.noop}>
-            Znajdż różnice
+            Znajdż różnicę
           </GButton>
         </Link>
-        <Link to="/lampki-instrukcja">
+        <Link to="/lampki/instrukcja">
           <GButton className="button" primary={true} onClick={_.noop}>
             Lampki
           </GButton>

@@ -106,8 +106,9 @@ class LightsExercisePage extends Component {
               "w ścisłej tajemnicy.")}
           </GParagraph>
           <GParagraph className="paragraph" align="center" size="medium">
-            {this.collapse("Z kolejnym wydaniem „Fake Time” będziecie mieli możliwość nabycia specjalnego dodatku")}
-            {this.error("stworzonego przez naszych redaktorów – kompendium radzenia sobie z chorobą, za jedyne 9,99£.")}
+            {this.collapse("Z kolejnym wydaniem „Fake Time” będziecie mieli możliwość nabycia specjalnego")}
+            {this.error("dodatku stworzonego przez naszych redaktorów")}
+            {this.collapse("– kompendium radzenia sobie z chorobą, za jedyne 9,99£.")}
           </GParagraph>
         </GSection>
         <Link to="/">

@@ -20,7 +20,7 @@ class LightsInstructionPage extends PureComponent {
             czytelnikach fałszywego przekonania względem rzetelności informacji.
           </GParagraph>
         </GSection>
-        <Link to="/lampki-cwiczenie">
+        <Link to="/lampki/cwiczenie">
           <GButton className="button" primary={true} onClick={_.noop}>
             Dalej
           </GButton>

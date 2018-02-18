@@ -37,7 +37,7 @@ class Highlight extends Component {
             </GTip>
           )}
         <span
-          onClick={(e) => discover(e) || (visible && this.toggleTip)}
+          onClick={(visible && this.toggleTip) || ((e) => discover(e))}
           className={
             visible
               ? `highlight highlight--${id} ${type ? `highlight--${type}` : ''}`
