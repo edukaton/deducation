@@ -11,8 +11,9 @@ import GNotification from 'grommet/components/Notification';
 import DifferencePost from './DifferencePost';
 import FindDifferenceIntro from './FindDifferenceIntro';
 import FindDifferenceNotification from './FindDifferenceNotification';
-import './FindDifference.css';
 import {postsByVisibility} from './FindDifferencePosts';
+
+import './FindDifference.css';
 
 class FindDifference extends Component {
   constructor(props) {
@@ -68,7 +69,10 @@ class FindDifference extends Component {
           enter={{animation: 'fade', duration: 1000, delay: 0}}
           leave={{animation: 'fade', duration: 1000, delay: 0}}>
           {visible ? (
-            <FindDifferenceNotification correct={correct[postNumber]} />
+            <FindDifferenceNotification
+              className="find-difference__notification"
+              correct={correct[postNumber]}
+            />
           ) : (
             <GNotification>
               Wybierz tekst budzący twoje podejrzenia.
@@ -83,7 +87,7 @@ class FindDifference extends Component {
                   key={heading.split(' ')[0]}
                   heading={heading}
                   content={content}
-                  onClick={!visible && this.selectPost(fake)}
+                  onClick={!visible ? this.selectPost(fake) : null}
                   className={!visible && 'post'}
                 />
               ))}

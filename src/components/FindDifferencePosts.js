@@ -8,7 +8,7 @@ export const postsByVisibility = visible => [
       fake: true,
       heading: 'NIESAMOWITE ODKRYCIE BRYTYJSKICH NAUKOWCÓW!',
       content: (
-        <div>
+        <React.Fragment>
           Jeden z Londynu przez ponad połowę swojego życia spożywał liście
           tytoniu. Dożył aż 103 lat. Możemy{' '}
           <Highlight
@@ -46,7 +46,7 @@ export const postsByVisibility = visible => [
           <br />
           <br />
           Żródło: precelek.pl
-        </div>
+        </React.Fragment>
       ),
     },
     {
@@ -54,7 +54,7 @@ export const postsByVisibility = visible => [
       heading:
         'UMIEJĘTNOŚĆ WYKRYWANIA KŁAMSTWA WŚRÓD POLICJANTÓW I PSYCHOLOGÓW',
       content: (
-        <div>
+        <React.Fragment>
           Głównym celem przeprowadzonego procesu badawczego
           <Highlight
             type="ok"
@@ -92,7 +92,7 @@ export const postsByVisibility = visible => [
           </Highlight>: Widacki,J. Mirska,N. Wrońska,M. (2012). Werbalne i
           niewerbalne symptomy kłamstwa w oczach policjantów oraz psychologów,
           Przegląd Bezpieczeństwa Wewnętrznego, 7, 19-30.
-        </div>
+        </React.Fragment>
       ),
     },
   ],
@@ -101,7 +101,7 @@ export const postsByVisibility = visible => [
       fake: true,
       heading: 'Wpływ długości oglądania telewizji na inteligencje',
       content: (
-        <div>
+        <React.Fragment>
           <Highlight
             type="critical"
             hint="Czym jest istotność z punktu widzenia statystyki?"
@@ -165,14 +165,14 @@ export const postsByVisibility = visible => [
             visible={visible}>
             dbamy-o-twoja-inteligencje
           </Highlight>
-        </div>
+        </React.Fragment>
       ),
     },
     {
       fake: false,
       heading: 'Emocje wypisane na twarzy!',
       content: (
-        <div>
+        <React.Fragment>
           Pomimo wielu badań na temat rozpoznawania emocji na podstawie analizy
           mimiki, naukowcy
           <Highlight
@@ -235,7 +235,7 @@ export const postsByVisibility = visible => [
             visible={visible}>
             Cognition
           </Highlight>, 125,195-206.
-        </div>
+        </React.Fragment>
       ),
     },
   ],
