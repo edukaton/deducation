@@ -9,7 +9,8 @@ import GAnchor from 'grommet/components/Anchor';
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import IntroductionPage from './components/IntroductionPage';
-import FindDifference from './components/FindDifference/FindDifference';
+import FindDifferenceIntro from './components/FindDifference/FindDifferenceIntro';
+import FindDifferencePage from './components/FindDifference/FindDifferencePage';
 import LightsExercisePage from './components/RedLights/LightsExercisePage';
 import LightsInstructionPage from './components/RedLights/LightsInstructionPage';
 import LightsTheoryPage from './components/RedLights/LightsTheoryPage';
@@ -23,14 +24,14 @@ class App extends Component {
         <GArticle className="article">
           <Router>
             <React.Fragment>
-              <Route path="/:x" render={() => <Header />} />
+              <Route path="/:x" component={Header} />
               <Switch>
                 <Route exact path="/" component={LandingPage} />
                 <Route path="/wprowadzenie" component={IntroductionPage} />
-                <Route
-                  path="/znajdz-roznice"
-                  component={() => <FindDifference />}
-                />
+                // TODO
+                <Route path="/znajdz-roznice/teoria" component={FindDifferenceIntro}/>
+                <Route path="/znajdz-roznice/instrukcja" component={FindDifferenceIntro}/>
+                <Route path="/znajdz-roznice/cwiczenie" component={FindDifferencePage}/>
                 <Route path="/lampki/teoria" component={LightsTheoryPage} />
                 <Route path="/lampki/instrukcja" component={LightsInstructionPage} />
                 <Route path="/lampki/cwiczenie" component={LightsExercisePage} />
@@ -38,7 +39,7 @@ class App extends Component {
               </Switch>
             </React.Fragment>
           </Router>
-          <GFooter className="footer" size="small">
+          <GFooter className="footer">
             <GAnchor align="center">Źródła</GAnchor>
           </GFooter>
         </GArticle>

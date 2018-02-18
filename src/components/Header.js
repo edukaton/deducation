@@ -20,9 +20,9 @@ class Header extends Component {
             Wprowadzenie
           </GButton>
         </Link>
-        <Link to="/znajdz-roznice">
+        <Link to="/znajdz-roznice/teoria">
           <GButton className="button" primary={true} onClick={_.noop}>
-            Znajdż różnicę
+            Znajdź różnicę
           </GButton>
         </Link>
         <Link to="/lampki/teoria">

@@ -61,8 +61,7 @@ export const postsByVisibility = visible => [
             hint="Powołanie się na pierwotne źródło informacji które zawiera
           oryginalny opis badań, obserwacji, spostrzeżeń, teorii, hipotez
           własnych autora"
-            visible={visible}>
-            (Widacki, Mirska, Wrońska, 2012)
+            visible={visible}> (Widacki, Mirska, Wrońska, 2012)
           </Highlight>, było sprawdzenie, jak psycholodzy oraz policjanci z
           pionów śledczych, oceniają diagnostyczność symptomów kłamstwa,
           poruszonych w literaturze przedmiotu. Ponadto zespół badawczy

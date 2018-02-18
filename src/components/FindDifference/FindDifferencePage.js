@@ -2,20 +2,19 @@ import React, {Component} from 'react';
 
 import {reverse} from 'lodash';
 import GSection from 'grommet/components/Section';
-import GColumns from 'grommet/components/Columns';
 import GAnimate from 'grommet/components/Animate';
 import GPulse from 'grommet/components/icons/Pulse';
 import GFormNext from 'grommet/components/icons/base/FormNext';
 import GNotification from 'grommet/components/Notification';
 
 import DifferencePost from './DifferencePost';
-import FindDifferenceIntro from './FindDifferenceIntro';
 import FindDifferenceNotification from './FindDifferenceNotification';
 import {postsByVisibility} from './FindDifferencePosts';
+import NavButtons from '../NavButtons';
 
 import './FindDifference.css';
 
-class FindDifference extends Component {
+class FindDifferencePage extends Component {
   constructor(props) {
     super(props);
 
@@ -34,8 +33,6 @@ class FindDifference extends Component {
     correct[postNumber] = correctSelected;
     this.setState({visible: true, correct});
   };
-
-  hideIntro = () => this.setState({intro: false});
 
   next = () => {
     const {intro, visible, postNumber} = this.state;
@@ -61,11 +58,10 @@ class FindDifference extends Component {
       posts[1] = reverse(posts[1]);
     }
 
-    return intro ? (
-      <FindDifferenceIntro hideIntro={this.hideIntro} />
-    ) : (
-      <React.Fragment>
+    return (
+      <div className="content-wrapper">
         <GAnimate
+          className="notification"
           enter={{animation: 'fade', duration: 1000, delay: 0}}
           leave={{animation: 'fade', duration: 1000, delay: 0}}>
           {visible ? (
@@ -79,9 +75,9 @@ class FindDifference extends Component {
             </GNotification>
           )}
         </GAnimate>
-        <GSection colorIndex="light-2">
+        <GSection>
           <GAnimate enter={{animation: 'slide-up', duration: 1000, delay: 0}}>
-            <GColumns masonry={true} justify="center" maxCount={2}>
+            <div className="columns">
               {posts[postNumber].map(({fake, heading, content}) => (
                 <DifferencePost
                   key={heading.split(' ')[0]}
@@ -91,7 +87,7 @@ class FindDifference extends Component {
                   className={!visible && 'post'}
                 />
               ))}
-            </GColumns>
+            </div>
           </GAnimate>
           <GAnimate
             className="button--next"
@@ -100,9 +96,10 @@ class FindDifference extends Component {
             <GPulse onClick={this.next} icon={<GFormNext />} />
           </GAnimate>
         </GSection>
-      </React.Fragment>
+        <NavButtons prev="/znajdz-roznice/instrukcja" next="/lampki/teoria"/>
+      </div>
     );
   }
 }
 
-export default FindDifference;
+export default FindDifferencePage;

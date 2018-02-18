@@ -23,68 +23,64 @@ body,
   font-family: DejaVu Sans, sans-serif;
 }
 
-.article {
+.header {
+  background-color: $color-blue-whale;
+  padding: 10px;
+
+  .logo {
+    cursor: pointer;
+    height: 50px;
+    width: auto;
+    margin: 0 30px;
+  }
+}
+
+.paragraph {
+  max-width: 100%;
+  text-align: justify;
+
+  .marked {
+    color: $color-black;
+    font-weight: 500;
+  }
+}
+
+.footer {
+  border-top: 1px solid $color-gull-gray;
+  padding: 20px;
   display: flex;
+  justify-content: center;
+}
 
-  .header {
-    background-color: $color-blue-whale;
+.content-wrapper {
+  display: flex;
+  flex-grow: 1;
+  margin: 50px;
+  flex-direction: column;
+  justify-content: space-between;
 
-    .logo {
-      cursor: pointer;
-      height: 50px;
-      width: auto;
-      margin: 10px 20px;
-    }
+  .notification {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
   }
 
   .columns {
     display: flex;
     flex-direction: row;
 
+    & > * {
+      flex-grow: 1;
+    }
+
     .image {
       margin: 50px;
     }
   }
 
-  .section {
-    flex-grow: 1;
-    color: $color-blue-whale;
-    background-color: $color-white;
+  .buttons-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-
-    .paragraph {
-      color: $color-blue-whale;
-      max-width: 100%;
-      text-align: justify;
-
-      .marked {
-        font-weight: bold;
-        color: $color-apple;
-      }
-    }
-
-
-    &.landing {
-      color: $color-white;
-      background-color: $color-blue-whale;
-
-      .paragraph {
-        color: $color-white;
-      }
-    }
-  }
-
-  .footer {
-    display: flex;
-    justify-content: center;
-    background-color: $color-white;
-    border-top: 1px solid $color-gull-gray;
-
-    & > * {
-      margin: 20px 40px;
-    }
+    justify-content: space-between;
   }
 }

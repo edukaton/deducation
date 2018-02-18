@@ -8,8 +8,8 @@ import './DifferencePost.css';
 
 const DifferencePost = ({heading, content, ...rest}) => (
   <GSection
-    margin="medium"
-    pad="medium"
+    margin="small"
+    pad="small"
     colorIndex="light-1"
     size={{
       height: 'large',

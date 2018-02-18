@@ -7,9 +7,8 @@ import GButton from 'grommet/components/Button';
 import GHeading from 'grommet/components/Heading';
 import GParagraph from 'grommet/components/Paragraph';
 
-import '../Highlight/Highlight.css';
-import './LightsExercisePage.css';
 import Highlight from "../Highlight";
+import NavButtons from "../NavButtons";
 
 class LightsExercisePage extends Component {
   constructor(props) {
@@ -69,9 +68,9 @@ class LightsExercisePage extends Component {
 
   render() {
     return (
-      <div className="lights-exercise">
+      <div className="content-wrapper">
         <GSection className="section">
-          <GHeading align="center" strong={true}>
+          <GHeading margin="medium" align="center" strong={true}>
             Przyczłapnik bulwulatora zaatakował Londyn!
           </GHeading>
           <GParagraph className="paragraph" align="center" size="medium">
@@ -111,11 +110,7 @@ class LightsExercisePage extends Component {
             {this.collapse("– kompendium radzenia sobie z chorobą, za jedyne 9,99£.")}
           </GParagraph>
         </GSection>
-        <Link to="/">
-          <GButton className="button" primary={true} onClick={_.noop}>
-            Dalej
-          </GButton>
-        </Link>
+        <NavButtons prev="/lampki/instrukcja" next="/"/>
       </div>
     );
   }

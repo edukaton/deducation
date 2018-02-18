@@ -1,0 +1,13 @@
+@import '../consts.scss';
+
+.landing-page-section {
+  flex-grow: 1;
+  color: $color-white;
+  background-color: $color-blue-whale;
+  align-items: center;
+  justify-content: space-around;
+
+  .paragraph {
+    color: $color-white;
+  }
+}
