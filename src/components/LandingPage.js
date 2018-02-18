@@ -18,7 +18,7 @@ class LandingPage extends PureComponent {
       <GSection className="landing-page-section">
         <GBox align="center" className="landing-page-box">
           <GImage src={sherlock} size="small" />
-          <GHeading align="center" strong={true}>
+          <GHeading align="center" strong={true} className="heading">
             Dedukacja
           </GHeading>
           <GParagraph className="paragraph" align="center" size="large">
