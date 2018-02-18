@@ -81,6 +81,10 @@ class MemoCards extends Component {
     };
   }
 
+  isFinished = () => {
+    return Object.values(this.state.revealed).length === 6;
+  };
+
   handleSelect = (text, answerNumber) => () => {
     const {selected, revealed} = this.state;
     const [selectedNumber = -1] = Object.values(selected);

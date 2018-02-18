@@ -11,8 +11,7 @@ $card-pad: 1em;
   padding: $card-pad;
 
   &:hover &__flipper,
-  &--reveal &__flipper,
-  &--selected &__flipper {
+  &--reveal &__flipper {
     transform: rotateY(180deg);
   }
 
@@ -58,7 +57,7 @@ $card-pad: 1em;
   &--selected {
     .memo-card__face,
     .memo-card__back {
-      background-color: darken($color-wild-sand, 20%);
+      background-color: darken($color-wild-sand, 30%);
     }
   }
 }
