@@ -10,14 +10,16 @@ const DifferencePost = ({heading, content, ...rest}) => (
   <GSection
     className="post"
     margin="small"
-    pad="small"
+    pad="medium"
     colorIndex="light-1"
     size={{
       height: 'large',
       width: 'large',
     }}
     {...rest}>
-    <GHeading tag="h3" className="heading">{heading}</GHeading>
+    <GHeading tag="h3" className="heading">
+      {heading}
+    </GHeading>
     <GParagraph className="paragraph">{content}</GParagraph>
   </GSection>
 );

@@ -84,7 +84,6 @@ class FindDifferencePage extends Component {
                   heading={heading}
                   content={content}
                   onClick={!visible ? this.selectPost(fake) : null}
-                  className={!visible && 'post'}
                 />
               ))}
             </div>

@@ -15,7 +15,6 @@
   src: url('assets/Raleway-Regular.ttf') format('truetype');
 }
 
-
 html,
 body,
 #root,
@@ -67,6 +66,7 @@ body,
 .post {
   .heading {
     font-family: Cutive, serif;
+    font-weight: bold;
   }
 
   .paragraph {
