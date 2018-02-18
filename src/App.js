@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import GApp from 'grommet/components/App';
 import GArticle from 'grommet/components/Article';
@@ -20,6 +21,7 @@ import MemoIntro from './components/MemoIntro';
 import LightsIntroPage from './components/RedLights/LightsIntroPage';
 import CrimeScene from './components/CrimeScene';
 import Quiz from './components/Quiz';
+import SourcesPage from './components/SourcesPage';
 
 import './App.css';
 
@@ -65,12 +67,13 @@ class App extends Component {
                   component={FindDifferencePage}
                 />
                 <Route path="/exit" component={ExitPage} />
+                <Route path="/zrodla" component={SourcesPage} />
                 <Redirect to="/" />
               </Switch>
             </React.Fragment>
           </Router>
           <GFooter className="footer">
-            <GAnchor align="center">Źródła</GAnchor>
+            <GAnchor align="center" href="/#/zrodla">Źródła</GAnchor>
           </GFooter>
         </GArticle>
       </GApp>
