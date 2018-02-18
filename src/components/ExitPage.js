@@ -2,7 +2,6 @@ import React, {PureComponent} from 'react';
 
 import GImage from 'grommet/components/Image';
 
-import NavButtons from './NavButtons';
 import caseClosed from '../assets/case-closed.png';
 
 class ExitPage extends PureComponent {
@@ -12,7 +11,7 @@ class ExitPage extends PureComponent {
         <div className="columns">
           <GImage src={caseClosed} size="small" className="image" />
         </div>
-        <NavButtons prev="/" next="/znajdz-roznice/teoria"/>
+
       </div>
     );
   }

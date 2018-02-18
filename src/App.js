@@ -35,6 +35,10 @@ class App extends Component {
                   component={MemoCards}
                 />
                 <Route
+                  path="/znajdz-roznice/teoria"
+                  component={MemoCards}
+                />
+                <Route
                   path="/znajdz-roznice/instrukcja"
                   component={FindDifferenceIntro}
                 />
