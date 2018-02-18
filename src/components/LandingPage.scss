@@ -2,10 +2,19 @@
 
 .landing-page-section {
   flex-grow: 1;
+  display: flex;
   color: $color-white;
-  background-color: $color-blue-whale;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  max-height: 100%;
+  background-image: url('../assets/london.jpeg');
+  padding: 0;
+
+  .landing-page-box {
+    background-color: rgba($color-shingle-fawn, 0.5);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
 
   .paragraph {
     color: $color-white;

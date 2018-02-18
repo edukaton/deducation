@@ -2,10 +2,13 @@ import React, {Component} from 'react';
 
 import GSection from 'grommet/components/Section';
 import GParagraph from 'grommet/components/Paragraph';
+import GImage from 'grommet/components/Image';
 import GAnimate from 'grommet/components/Animate';
 import GHeading from 'grommet/components/Heading';
 import GNotification from 'grommet/components/Notification';
 import NavButtons from '../NavButtons';
+
+import dog from '../../assets/dog.svg';
 
 class LightsTheoryPage extends Component {
   constructor(props) {
@@ -100,6 +103,7 @@ class LightsTheoryPage extends Component {
                   Mało precyzyjna i ogólnikowa. Nie przewiduje zjawisk.
                 </GParagraph>
               </GSection>
+              <GImage src={dog} size="small" />
             </div>
           </GAnimate>
         </GSection>

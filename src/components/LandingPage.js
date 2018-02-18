@@ -16,7 +16,7 @@ class LandingPage extends PureComponent {
   render() {
     return (
       <GSection className="landing-page-section">
-        <GBox align="center">
+        <GBox align="center" className="landing-page-box">
           <GImage src={sherlock} size="small" />
           <GHeading align="center" strong={true}>
             Dedukacja
@@ -24,12 +24,12 @@ class LandingPage extends PureComponent {
           <GParagraph className="paragraph" align="center" size="large">
             Część I: Sherlock i fatalne fake newsy
           </GParagraph>
+          <Link to="/wprowadzenie">
+            <GButton className="button" primary={true} onClick={_.noop}>
+              Rozpocznij
+            </GButton>
+          </Link>
         </GBox>
-        <Link to="/wprowadzenie">
-          <GButton className="button" primary={true} onClick={_.noop}>
-            Rozpocznij
-          </GButton>
-        </Link>
       </GSection>
     );
   }
