@@ -13,11 +13,11 @@ class ExitPage extends PureComponent {
       <div className="content-wrapper">
         <div className="columns">
           <GSection className="section post">
-            <GParagraph className="paragraph" align="center" size="large">
+            <GParagraph className="paragraph limited" align="center" size="large">
               Moje gratulacje drogi Watsonie! Pokonałeś Moriarty’ego, a jego laboratorium zostało zniszczone! Mieszkańcy Londynu mogą odetchnąć z ulgą.
               W nagrodę za Twoje zasługi Królowa Matka przyznała Ci Order Imperium Brytyjskiego!
             </GParagraph>
-            <GImage src={caseClosed} size="small" className="image" />
+            <GImage src={caseClosed} size="large" className="image" />
           </GSection>
           <GImage src={order} size="small" className="image" />
         </div>

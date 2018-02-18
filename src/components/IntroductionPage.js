@@ -31,7 +31,7 @@ class LandingPage extends PureComponent {
               Sieciową sielankę przerywa jednak niepokojąca informacja o
               najnowszym dokonaniu profesora Moriarty’ego – z jego laboratorium
               wyciekły toksyczne,
-              <b> fatalne fake newsy</b>.
+              <span className="marked"> fatalne fake newsy</span>.
             </GParagraph>
             <GParagraph className="paragraph" size="large" margin="small">
               Pomóż Sherlockowi rozwiązać zagadkę niepewnych źródeł i ocal świat

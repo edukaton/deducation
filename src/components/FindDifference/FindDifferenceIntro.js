@@ -13,7 +13,7 @@ const FindDifferenceIntro = ({hideIntro}) => (
         Znajdź różnice
       </GHeading>
       <GParagraph
-        className="paragraph"
+        className="paragraph limited"
         margin="medium"
         size="large"
         justify="center">

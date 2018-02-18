@@ -123,3 +123,12 @@ body,
 .marked {
   font-weight: bold;
 }
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.limited {
+  max-width: 800px;
+}

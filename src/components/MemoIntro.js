@@ -13,10 +13,10 @@ class MemoIntro extends PureComponent {
           <GHeading margin="medium" align="center" strong={true}>
             Znajdź różnice
           </GHeading>
-          <GParagraph className="paragraph" align="center" size="large">
+          <GParagraph className="paragraph limited" align="center" size="large">
             Watsonie, mam dla Ciebie kolejne wskazówki, które mogą pomóc w walce z Moriarty'm. Chciałbym zapoznać Cię z kilkoma błędami, które mogą mieć wpływ na Twoje postrzeganie informacji.
           </GParagraph>
-          <GParagraph className="paragraph" align="center" size="large">
+          <GParagraph className="paragraph limited" align="center" size="large">
             Dobry detektyw powinien charakteryzować się znakomitą pamięcią. Szybko powinieneś przyswoić tę wiedzę. Twoim zadaniem jest dopasowanie definicji do przykładów poprzez odkrywanie kolejnych kafelków.
           </GParagraph>
         </GSection>

@@ -17,7 +17,7 @@ class LightsInstructionPage extends PureComponent {
             <GHeading margin="medium" align="center" strong={true}>
               Lampki
             </GHeading>
-            <GParagraph className="paragraph" align="center" size="large">
+            <GParagraph className="paragraph limited" align="center" size="large">
               Moriarty przekupił znajomych redaktorów i za ich pomocą rozsiewa wirus paniki w mieście. Nie dopuść
               do dezinformacji społeczeństwa i wybuchu rychłej katastrofy. Przerażony tłum brzytwy się chwyta, a cwany
               Moriarty zostanie golibrodą. Twoim zadaniem jest wychwycenie sformułowań mających na celu wytworzenie w

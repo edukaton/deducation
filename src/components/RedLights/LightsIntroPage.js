@@ -13,7 +13,7 @@ class LightsIntroPage extends PureComponent {
           <GHeading margin="medium" align="center" strong={true}>
             Lampki
           </GHeading>
-          <GParagraph className="paragraph" align="center" size="large">
+          <GParagraph className="paragraph limited" align="center" size="large">
             Moriarty zaczął działać w ukryciu i mieszać fakty z informacjami
             wątpliwej jakości. Pomóż poczciwemu Gladstone’owi wytropić wiedzę
             naukową – wskaż właściwą kolumnę tabeli.
