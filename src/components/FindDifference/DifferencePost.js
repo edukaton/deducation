@@ -8,6 +8,7 @@ import './DifferencePost.css';
 
 const DifferencePost = ({heading, content, ...rest}) => (
   <GSection
+    className="post"
     margin="small"
     pad="small"
     colorIndex="light-1"
@@ -16,8 +17,8 @@ const DifferencePost = ({heading, content, ...rest}) => (
       width: 'large',
     }}
     {...rest}>
-    <GHeading tag="h3">{heading}</GHeading>
-    <GParagraph>{content}</GParagraph>
+    <GHeading tag="h3" className="heading">{heading}</GHeading>
+    <GParagraph className="paragraph">{content}</GParagraph>
   </GSection>
 );
 

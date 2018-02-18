@@ -44,62 +44,62 @@ class LightsTheoryPage extends Component {
               <GSection
                 margin="small"
                 pad="small"
-                className="section"
+                className="section post"
                 onClick={() => this.reveal(true)}>
                 {this.state.visible && (
-                  <GHeading tag="h3">Wiedza naukowa</GHeading>
+                  <GHeading tag="h3" className="heading">Wiedza naukowa</GHeading>
                 )}
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Uporządkowana, opierająca się na relacji przyczyna – skutek,
                   bazująca na systemach dedukcyjnych.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Bazująca na twierdzeniach naukowych dostarczających wiedzę
                   empiryczną i logiczną.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Sprawdzalna za pomocą badań prowadzonych w oparciu o metody
                   naukowe; możliwa do weryfikacji.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Poziom przekonania na temat danej teorii jest równy poziomowi
                   jego uzasadnienia.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Weryfikuje zależności pomiędzy zjawiskami czy też
                   mechanizmami.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Wyspecjalizowana. Nie podlega ocenie.
                 </GParagraph>
               </GSection>
               <GSection
                 margin="small"
                 pad="small"
-                className="section"
+                className="section post"
                 onClick={() => this.reveal(false)}>
                 {this.state.visible && (
-                  <GHeading tag="h3">Wiedza nienaukowa</GHeading>
+                  <GHeading tag="h3" className="heading">Wiedza nienaukowa</GHeading>
                 )}
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Opiera się na podejściu zdroworozsądkowym, życiu codziennym;
                   jest rozległa i zróżnicowana.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Dotyka ona bezpośrednio samych zjawisk, a nie ich modeli.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Jej twierdzenia odnoszą się do pojedynczych przypadków lub ich
                   niewielkich zbiorów.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Nie odnoszą się do statystyk, jej twierdzenia są formułowane
                   za pomocą opisów;
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Posiada komponenty emocjonalne.
                 </GParagraph>
-                <GParagraph margin="small">
+                <GParagraph margin="small" className="paragraph">
                   Mało precyzyjna i ogólnikowa. Nie przewiduje zjawisk.
                 </GParagraph>
               </GSection>
