@@ -34,8 +34,9 @@ class Highlight extends Component {
         <span
           onClick={visible && this.toggleTip}
           className={
-            visible &&
-            `highlight highlight--${id} ${type && `highlight--${type}`}`
+            visible
+              ? `highlight highlight--${id} ${type ? `highlight--${type}` : ''}`
+              : ''
           }>
           {children}
         </span>
