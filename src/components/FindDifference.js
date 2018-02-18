@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import {reverse} from 'lodash';
 import GSection from 'grommet/components/Section';
 import GColumns from 'grommet/components/Columns';
 import GAnimate from 'grommet/components/Animate';
@@ -16,6 +17,8 @@ import {postsByVisibility} from './FindDifferencePosts';
 class FindDifference extends Component {
   constructor(props) {
     super(props);
+
+    this.seed = Math.round(Math.random() * 8 + 0.5);
 
     this.state = {
       intro: true,
@@ -45,7 +48,17 @@ class FindDifference extends Component {
 
   render() {
     const {visible, intro, correct, postNumber} = this.state;
-    const posts = postsByVisibility(visible);
+    let posts = postsByVisibility(visible);
+
+    if (this.seed & 1) {
+      posts = reverse(posts);
+    }
+    if (this.seed & 2) {
+      posts[0] = reverse(posts[0]);
+    }
+    if (this.seed & 4) {
+      posts[1] = reverse(posts[1]);
+    }
 
     return intro ? (
       <FindDifferenceIntro hideIntro={this.hideIntro} />
@@ -65,18 +78,15 @@ class FindDifference extends Component {
         <GSection colorIndex="light-2">
           <GAnimate enter={{animation: 'slide-up', duration: 1000, delay: 0}}>
             <GColumns masonry={true} justify="center" maxCount={2}>
-              <DifferencePost
-                heading={posts[postNumber].fake.heading}
-                content={posts[postNumber].fake.content}
-                onClick={!visible && this.selectPost(true)}
-                className={!visible && 'post'}
-              />
-              <DifferencePost
-                heading={posts[postNumber].legit.heading}
-                content={posts[postNumber].legit.content}
-                onClick={!visible && this.selectPost(false)}
-                className={!visible && 'post'}
-              />
+              {posts[postNumber].map(({fake, heading, content}) => (
+                <DifferencePost
+                  key={heading.split(' ')[0]}
+                  heading={heading}
+                  content={content}
+                  onClick={!visible && this.selectPost(fake)}
+                  className={!visible && 'post'}
+                />
+              ))}
             </GColumns>
           </GAnimate>
           <GAnimate

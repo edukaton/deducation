@@ -3,9 +3,10 @@ import React from 'react';
 import Highlight from './Highlight';
 
 export const postsByVisibility = visible => [
-  {
-    fake: {
-      heading: <div>NIESAMOWITE ODKRYCIE BRYTYJSKICH NAUKOWCÓW!</div>,
+  [
+    {
+      fake: true,
+      heading: 'NIESAMOWITE ODKRYCIE BRYTYJSKICH NAUKOWCÓW!',
       content: (
         <div>
           Jeden z Londynu przez ponad połowę swojego życia spożywał liście
@@ -48,12 +49,10 @@ export const postsByVisibility = visible => [
         </div>
       ),
     },
-    legit: {
-      heading: (
-        <div>
-          UMIEJĘTNOŚĆ WYKRYWANIA KŁAMSTWA WŚRÓD POLICJANTÓW I PSYCHOLOGÓW
-        </div>
-      ),
+    {
+      fake: false,
+      heading:
+        'UMIEJĘTNOŚĆ WYKRYWANIA KŁAMSTWA WŚRÓD POLICJANTÓW I PSYCHOLOGÓW',
       content: (
         <div>
           Głównym celem przeprowadzonego procesu badawczego
@@ -96,10 +95,11 @@ export const postsByVisibility = visible => [
         </div>
       ),
     },
-  },
-  {
-    fake: {
-      heading: <div>Wpływ długości oglądania telewizji na inteligencje</div>,
+  ],
+  [
+    {
+      fake: true,
+      heading: 'Wpływ długości oglądania telewizji na inteligencje',
       content: (
         <div>
           <Highlight
@@ -168,8 +168,9 @@ export const postsByVisibility = visible => [
         </div>
       ),
     },
-    legit: {
-      heading: <div>Emocje wypisane na twarzy!</div>,
+    {
+      fake: false,
+      heading: 'Emocje wypisane na twarzy!',
       content: (
         <div>
           Pomimo wielu badań na temat rozpoznawania emocji na podstawie analizy
@@ -237,5 +238,5 @@ export const postsByVisibility = visible => [
         </div>
       ),
     },
-  },
+  ],
 ];
