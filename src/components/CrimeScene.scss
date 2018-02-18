@@ -1,0 +1,96 @@
+.crime-scene {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  margin-top: 80px;
+
+  &__image {
+    position: absolute;
+    margin-left: -192px;
+    margin-top: 5%;
+  }
+
+  &__evidence {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    background-color: white;
+    font-size: 0;
+
+    &:after {
+      font-size: 30px;
+      padding: 0 0.6em;
+      color: black;
+      box-shadow: 3px 3px 2px black;
+    }
+
+    &:hover {
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      height: 200px;
+      width: 300px;
+      padding: 0.5em 1em;
+      font-size: 14px;
+      box-shadow: 0 5px 5px black;
+      z-index: 5;
+      font-family: Cutive, serif;
+      transition: width 0.1s ease-out, height 0.1s ease-out,
+        font-size 0.1s ease-out;
+
+      &:after {
+        font-size: 0;
+      }
+    }
+
+    &--1 {
+      top: 10%;
+      left: 30%;
+      &:after {
+        content: '1';
+      }
+    }
+    &--2 {
+      left: 20%;
+      top: 30%;
+      &:after {
+        content: '2';
+      }
+    }
+    &--3 {
+      left: 25%;
+      top: 60%;
+      &:after {
+        content: '3';
+      }
+    }
+    &--4 {
+      left: 30%;
+      top: 70%;
+      &:after {
+        content: '4';
+      }
+    }
+    &--5 {
+      right: 35%;
+      top: 80%;
+      &:after {
+        content: '5';
+      }
+    }
+    &--6 {
+      right: 20%;
+      top: 40%;
+      &:after {
+        content: '6';
+      }
+    }
+    &--7 {
+      right: 20%;
+      top: 15%;
+      &:after {
+        content: '7';
+      }
+    }
+  }
+}

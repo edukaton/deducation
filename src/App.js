@@ -17,7 +17,8 @@ import LightsTheoryPage from './components/RedLights/LightsTheoryPage';
 import ExitPage from './components/ExitPage';
 import MemoCards from './components/MemoCards';
 import MemoIntro from './components/MemoIntro';
-import LightsIntroPage from "./components/RedLights/LightsIntroPage";
+import LightsIntroPage from './components/RedLights/LightsIntroPage';
+import CrimeScene from './components/CrimeScene';
 
 import './App.css';
 
@@ -32,14 +33,13 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={LandingPage} />
                 <Route path="/wprowadzenie" component={IntroductionPage} />
+                <Route path="/znajdz-roznice/wstep" component={MemoIntro} />
+                <Route path="/znajdz-roznice/teoria" component={MemoCards} />
                 <Route
-                  path="/znajdz-roznice/wstep"
-                  component={MemoIntro}
+                  path="/znajdz-roznice/teoria/teoria"
+                  component={CrimeScene}
                 />
-                <Route
-                  path="/znajdz-roznice/teoria"
-                  component={MemoCards}
-                />
+                <Route path="/znajdz-roznice/teoria" component={MemoCards} />
                 <Route
                   path="/znajdz-roznice/instrukcja"
                   component={FindDifferenceIntro}
