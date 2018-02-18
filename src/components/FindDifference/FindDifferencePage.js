@@ -21,7 +21,6 @@ class FindDifferencePage extends Component {
     this.seed = Math.round(Math.random() * 8 + 0.5);
 
     this.state = {
-      intro: true,
       visible: false,
       correct: [],
       postNumber: 0,
@@ -35,9 +34,9 @@ class FindDifferencePage extends Component {
   };
 
   next = () => {
-    const {intro, visible, postNumber} = this.state;
+    const {visible, postNumber} = this.state;
 
-    if (intro || !visible) {
+    if (!visible) {
       return;
     }
 
