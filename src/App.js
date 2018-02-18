@@ -28,13 +28,28 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={LandingPage} />
                 <Route path="/wprowadzenie" component={IntroductionPage} />
-                // TODO
-                <Route path="/znajdz-roznice/teoria" component={FindDifferenceIntro}/>
-                <Route path="/znajdz-roznice/instrukcja" component={FindDifferenceIntro}/>
-                <Route path="/znajdz-roznice/cwiczenie" component={FindDifferencePage}/>
+                {/*TODO */}
+                <Route
+                  path="/znajdz-roznice/teoria"
+                  component={FindDifferenceIntro}
+                />
+                <Route
+                  path="/znajdz-roznice/instrukcja"
+                  component={FindDifferenceIntro}
+                />
+                <Route
+                  path="/znajdz-roznice/cwiczenie"
+                  component={FindDifferencePage}
+                />
                 <Route path="/lampki/teoria" component={LightsTheoryPage} />
-                <Route path="/lampki/instrukcja" component={LightsInstructionPage} />
-                <Route path="/lampki/cwiczenie" component={LightsExercisePage} />
+                <Route
+                  path="/lampki/instrukcja"
+                  component={LightsInstructionPage}
+                />
+                <Route
+                  path="/lampki/cwiczenie"
+                  component={LightsExercisePage}
+                />
                 <Redirect to="/" />
               </Switch>
             </React.Fragment>

@@ -45,7 +45,7 @@ class FindDifferencePage extends Component {
   };
 
   render() {
-    const {visible, intro, correct, postNumber} = this.state;
+    const {visible, correct, postNumber} = this.state;
     let posts = postsByVisibility(visible);
 
     if (this.seed & 1) {
@@ -96,7 +96,7 @@ class FindDifferencePage extends Component {
             <GPulse onClick={this.next} icon={<GFormNext />} />
           </GAnimate>
         </GSection>
-        <NavButtons prev="/znajdz-roznice/instrukcja" next="/lampki/teoria"/>
+        <NavButtons prev="/znajdz-roznice/instrukcja" next="/lampki/teoria" />
       </div>
     );
   }
