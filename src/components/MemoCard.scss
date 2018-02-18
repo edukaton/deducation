@@ -1,0 +1,61 @@
+@import '../consts.scss';
+
+$card-height: 200px;
+$card-pad: 1em;
+
+.memo-card {
+  perspective: 1000;
+  height: $card-height;
+  padding: $card-pad;
+
+  &:hover &__flipper,
+  &--reveal &__flipper,
+  &--selected &__flipper {
+    transform: rotateY(180deg);
+  }
+
+  &__flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  &__face,
+  &__back {
+    padding: 1em;
+    background-color: darken($color-wild-sand, 10%);
+    user-select: none;
+    transition: background-color 0.5s ease;
+    backface-visibility: hidden;
+    height: calc(#{$card-height} - 2 * #{$card-pad});
+    width: 100%;
+
+    opacity: 80%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__face {
+    transform: rotateY(180deg);
+    &--quote {
+      font-style: italic;
+    }
+  }
+
+  &__back {
+    z-index: 2;
+  }
+
+  &--selected {
+    .memo-card__face,
+    .memo-card__back {
+      background-color: darken($color-wild-sand, 20%);
+    }
+  }
+}

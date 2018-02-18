@@ -1,0 +1,50 @@
+@import '../consts.scss';
+
+.memo-grid {
+  display: flex;
+  flex-flow: row wrap;
+  &__item {
+    flex-basis: 25%;
+  }
+  &__item {
+    /*
+    //$color-blue-whale: #033a46;
+    //$color-gull-gray: #9ab2b4;
+    //$color-apple: #53bf46;
+    //$color-orange: #fc6a2a;
+    //$color-black: #000;
+    //$color-silver: #c1c1c1;
+    //$color-wild-sand: #f5f5f5;
+    */
+    &--1 {
+      .memo-card__face {
+        background-color: lighten($color-blue-whale, 70%);
+      }
+    }
+    &--2 {
+      .memo-card__face {
+        background-color: lighten($color-apple, 20%);
+      }
+    }
+    &--3 {
+      .memo-card__face {
+        background-color: lighten($color-orange, 20%);
+      }
+    }
+    &--4 {
+      .memo-card__face {
+        background-color: darken($color-silver, 10%);
+      }
+    }
+    &--5 {
+      .memo-card__face {
+        background-color: darken($color-wild-sand, 10%);
+      }
+    }
+    &--6 {
+      .memo-card__face {
+        background-color: lighten($color-blue-whale, 30%);
+      }
+    }
+  }
+}

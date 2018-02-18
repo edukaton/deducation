@@ -14,6 +14,7 @@ import FindDifferencePage from './components/FindDifference/FindDifferencePage';
 import LightsExercisePage from './components/RedLights/LightsExercisePage';
 import LightsInstructionPage from './components/RedLights/LightsInstructionPage';
 import LightsTheoryPage from './components/RedLights/LightsTheoryPage';
+import MemoCards from './components/MemoCards';
 
 import './App.css';
 
@@ -50,6 +51,7 @@ class App extends Component {
                   path="/lampki/cwiczenie"
                   component={LightsExercisePage}
                 />
+                <Route path="/memo" component={MemoCards} />
                 <Redirect to="/" />
               </Switch>
             </React.Fragment>
