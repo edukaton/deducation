@@ -39,7 +39,7 @@ class App extends Component {
             </React.Fragment>
           </Router>
           <GFooter className="footer" size="small">
-            <GAnchor align="center">Żródła</GAnchor>
+            <GAnchor align="center">Źródła</GAnchor>
           </GFooter>
         </GArticle>
       </GApp>

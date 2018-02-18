@@ -25,7 +25,7 @@ class Header extends Component {
             Znajdż różnicę
           </GButton>
         </Link>
-        <Link to="/lampki/instrukcja">
+        <Link to="/lampki/teoria">
           <GButton className="button" primary={true} onClick={_.noop}>
             Lampki
           </GButton>
