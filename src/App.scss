@@ -38,10 +38,13 @@ body,
 .paragraph {
   max-width: 100%;
   text-align: justify;
+  white-space: pre-wrap;
 
-  .marked {
-    color: $color-black;
-    font-weight: 500;
+  .word:hover {
+    white-space: pre-wrap;
+    background-color: $color-silver;
+    border-radius: 5px;
+    cursor: pointer;
   }
 }
 
