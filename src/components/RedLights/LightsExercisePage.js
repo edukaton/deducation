@@ -7,9 +7,9 @@ import GButton from 'grommet/components/Button';
 import GHeading from 'grommet/components/Heading';
 import GParagraph from 'grommet/components/Paragraph';
 
-import './Highlight.css';
+import '../Highlight/Highlight.css';
 import './LightsExercisePage.css';
-import Highlight from "./Highlight";
+import Highlight from "../Highlight";
 
 class LightsExercisePage extends Component {
   constructor(props) {

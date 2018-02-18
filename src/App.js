@@ -9,10 +9,10 @@ import GAnchor from 'grommet/components/Anchor';
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import IntroductionPage from './components/IntroductionPage';
-import FindDifference from './components/FindDifference';
-import LightsExercisePage from './components/LightsExercisePage';
-import LightsInstructionPage from './components/LightsInstructionPage';
-import LightsTheoryPage from './components/LightsTheoryPage';
+import FindDifference from './components/FindDifference/FindDifference';
+import LightsExercisePage from './components/RedLights/LightsExercisePage';
+import LightsInstructionPage from './components/RedLights/LightsInstructionPage';
+import LightsTheoryPage from './components/RedLights/LightsTheoryPage';
 
 import './App.css';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Highlight from './Highlight';
+import Highlight from '../Highlight/Highlight';
 
 export const postsByVisibility = visible => [
   [
