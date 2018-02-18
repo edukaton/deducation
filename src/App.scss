@@ -6,7 +6,7 @@ body,
 .app,
 .article {
   height: 100%;
-  font-family: Open Sans, sans-serif;
+  font-family: DejaVu Sans, sans-serif;
 
   a {
     color: $color-apple;
@@ -20,7 +20,7 @@ body,
 }
 
 .grommet {
-  font-family: Open Sans, sans-serif;
+  font-family: DejaVu Sans, sans-serif;
 }
 
 .article {
@@ -37,23 +37,27 @@ body,
     }
   }
 
+  .columns {
+    display: flex;
+    flex-direction: row;
+
+    .image {
+      margin: 50px;
+    }
+  }
+
   .section {
     flex-grow: 1;
     color: $color-blue-whale;
     background-color: $color-white;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-
-    .image {
-      margin: 50px;
-    }
+    padding: 30px;
 
     .paragraph {
       color: $color-blue-whale;
-      max-width: none;
+      max-width: 100%;
       text-align: justify;
 
       .marked {
@@ -62,10 +66,10 @@ body,
       }
     }
 
+
     &.landing {
       color: $color-white;
       background-color: $color-blue-whale;
-      flex-direction: column;
 
       .paragraph {
         color: $color-white;

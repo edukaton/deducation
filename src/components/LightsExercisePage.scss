@@ -1,0 +1,19 @@
+@import "../consts.scss";
+
+.lights-exercise {
+  padding: 30px;
+
+  .paragraph {
+    max-width: 100%;
+
+    .word {
+      white-space: pre-wrap;
+
+      &:hover {
+        background-color: $color-silver;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+}

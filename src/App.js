@@ -6,10 +6,12 @@ import GArticle from 'grommet/components/Article';
 import GFooter from 'grommet/components/Footer';
 import GAnchor from 'grommet/components/Anchor';
 
+import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import IntroductionPage from './components/IntroductionPage';
 import FindDifference from './components/FindDifference';
-import Header from './components/Header';
+import LightsExercisePage from './components/LightsExercisePage';
+import LightsInstructionPage from './components/LightsInstructionPage';
 
 import './App.css';
 
@@ -28,6 +30,8 @@ class App extends Component {
                   path="/znajdz-roznice"
                   component={() => <FindDifference />}
                 />
+                <Route path="/lampki-instrukcja" component={LightsInstructionPage} />
+                <Route path="/lampki-cwiczenie" component={LightsExercisePage} />
                 <Redirect to="/" />
               </Switch>
             </React.Fragment>

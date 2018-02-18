@@ -17,7 +17,12 @@ class Highlight extends Component {
   render() {
     const id = count++;
     const {showTip} = this.state;
-    const {children, type, hint, visible} = this.props;
+    const {children, type, hint, visible, onClick} = this.props;
+
+    const discover = (e) => {
+      onClick(e);
+      this.toggleTip();
+    }
 
     return (
       <React.Fragment>
@@ -32,7 +37,7 @@ class Highlight extends Component {
             </GTip>
           )}
         <span
-          onClick={visible && this.toggleTip}
+          onClick={(e) => discover(e) || (visible && this.toggleTip)}
           className={
             visible
               ? `highlight highlight--${id} ${type ? `highlight--${type}` : ''}`

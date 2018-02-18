@@ -6,7 +6,6 @@ import GSection from 'grommet/components/Section';
 import GHeading from 'grommet/components/Heading';
 import GParagraph from 'grommet/components/Paragraph';
 import GButton from 'grommet/components/Button';
-import GBox from 'grommet/components/Box';
 import GImage from 'grommet/components/Image';
 
 import bigBen from '../assets/big-ben.svg';
@@ -14,8 +13,8 @@ import bigBen from '../assets/big-ben.svg';
 class LandingPage extends PureComponent {
   render() {
     return (
-      <GSection className="section">
-        <GBox align="center">
+      <div className="columns">
+        <GSection className="section">
           <GHeading align="center" strong={true}>
             Wstęp
           </GHeading>
@@ -44,8 +43,8 @@ class LandingPage extends PureComponent {
             margin="small">
             Sieciową sielankę przerywa jednak niepokojąca informacja o
             najnowszym dokonaniu profesora Moriarty’ego – z jego laboratorium
-            wyciekły, toksyczne{' '}
-            <span className="marked">fatalne fake newsy</span>.
+            wyciekły, toksyczne
+            <span className="marked"> fatalne fake newsy</span>.
           </GParagraph>
           <GParagraph
             className="paragraph"
@@ -61,9 +60,9 @@ class LandingPage extends PureComponent {
               Dalej
             </GButton>
           </Link>
-        </GBox>
+        </GSection>
         <GImage src={bigBen} size="small" className="image" />
-      </GSection>
+      </div>
     );
   }
 }
