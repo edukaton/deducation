@@ -1,14 +1,15 @@
 {
-  "main.css": "static/css/main.91731947.css",
-  "main.css.map": "static/css/main.91731947.css.map",
-  "main.js": "static/js/main.e99deaae.js",
-  "main.js.map": "static/js/main.e99deaae.js.map",
+  "main.css": "static/css/main.5f763875.css",
+  "main.css.map": "static/css/main.5f763875.css.map",
+  "main.js": "static/js/main.f2f0914c.js",
+  "main.js.map": "static/js/main.f2f0914c.js.map",
   "static/media/BellfortRoughDemo.otf": "static/media/BellfortRoughDemo.2d55f3f9.otf",
   "static/media/Cutive-Regular.ttf": "static/media/Cutive-Regular.0f5280ad.ttf",
   "static/media/Raleway-Regular.ttf": "static/media/Raleway-Regular.580d0778.ttf",
   "static/media/big-ben.svg": "static/media/big-ben.cf9c4438.svg",
   "static/media/case-closed.png": "static/media/case-closed.1c19b4a2.png",
   "static/media/dog.svg": "static/media/dog.3afca866.svg",
-  "static/media/london.jpeg": "static/media/london.d05dec46.jpeg",
+  "static/media/london.jpeg": "static/media/london.c0eccd4d.jpeg",
+  "static/media/murder.svg": "static/media/murder.44e10492.svg",
   "static/media/sherlock.svg": "static/media/sherlock.83fe816c.svg"
 }
