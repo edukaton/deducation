@@ -41,7 +41,7 @@ class CrimeScene extends Component {
     return (
       <div className="content-wrapper">
         <GNotification closer={true} className="notification">
-          Zbadaj miejsce zbrodni. Podglądaj dowody oznaczone cyframi.
+          Dopasuj błędy poznawcze do wypowiedzi.
         </GNotification>
         <div className="crime-scene">
           <GImage src={murder} size="medium" className="crime-scene__image" />

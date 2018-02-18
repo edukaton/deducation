@@ -23,12 +23,16 @@ class LightsTheoryPage extends Component {
   render() {
     return (
       <div className="content-wrapper">
-        {this.state.visible && (
+        {this.state.visible ? (
           <GNotification
             closer={true}
             status={this.state.correct ? 'ok' : 'critical'}
             className="notification">
             {this.state.correct ? 'Dobra robota. ' : 'Błędny wybór. '}
+          </GNotification>
+        ) : (
+          <GNotification closer={true} className="notification">
+            Wskaż, które z podpunktów opisują wiedzę naukową.
           </GNotification>
         )}
         <GSection margin="small" pad="small" className="section">
@@ -40,7 +44,9 @@ class LightsTheoryPage extends Component {
                 className="section post"
                 onClick={() => this.reveal(true)}>
                 {this.state.visible && (
-                  <GHeading tag="h3" className="heading">Wiedza naukowa</GHeading>
+                  <GHeading tag="h3" className="heading">
+                    Wiedza naukowa
+                  </GHeading>
                 )}
                 <GParagraph margin="small" className="paragraph">
                   Uporządkowana, opierająca się na relacji przyczyna – skutek,
@@ -72,7 +78,9 @@ class LightsTheoryPage extends Component {
                 className="section post"
                 onClick={() => this.reveal(false)}>
                 {this.state.visible && (
-                  <GHeading tag="h3" className="heading">Wiedza nienaukowa</GHeading>
+                  <GHeading tag="h3" className="heading">
+                    Wiedza nienaukowa
+                  </GHeading>
                 )}
                 <GParagraph margin="small" className="paragraph">
                   Opiera się na podejściu zdroworozsądkowym, życiu codziennym;
@@ -100,10 +108,7 @@ class LightsTheoryPage extends Component {
             </div>
           </GAnimate>
         </GSection>
-        <NavButtons
-          prev="/lampki/wstep"
-          next="/lampki/instrukcja"
-        />
+        <NavButtons prev="/lampki/wstep" next="/lampki/instrukcja" />
       </div>
     );
   }

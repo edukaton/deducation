@@ -3,9 +3,10 @@ import React, {Component} from 'react';
 import {shuffle} from 'lodash';
 
 import MemoCard from './MemoCard';
+import GNotification from 'grommet/components/Notification';
 
 import './MemoCards.css';
-import NavButtons from "./NavButtons";
+import NavButtons from './NavButtons';
 
 const cards = shuffle([
   {
@@ -105,6 +106,9 @@ class MemoCards extends Component {
     const {selected, revealed} = this.state;
     return (
       <div className="content-wrapper">
+        <GNotification closer={true} className="notification">
+          Zbadaj miejsce zbrodni. Podglądaj dowody oznaczone cyframi.
+        </GNotification>
         <div className="memo-grid">
           {cards.map(({text, answerNumber, quote}) => (
             <MemoCard
@@ -117,7 +121,10 @@ class MemoCards extends Component {
             />
           ))}
         </div>
-        <NavButtons prev="/znajdz-roznice/wstep" next="/znajdz-roznice/instrukcja"/>
+        <NavButtons
+          prev="/znajdz-roznice/wstep"
+          next="/znajdz-roznice/instrukcja"
+        />
       </div>
     );
   }
