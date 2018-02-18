@@ -1,8 +1,13 @@
 {
-  "main.css": "static/css/main.52f0d1d3.css",
-  "main.css.map": "static/css/main.52f0d1d3.css.map",
-  "main.js": "static/js/main.09aa4643.js",
-  "main.js.map": "static/js/main.09aa4643.js.map",
+  "main.css": "static/css/main.733b96f1.css",
+  "main.css.map": "static/css/main.733b96f1.css.map",
+  "main.js": "static/js/main.cb84590a.js",
+  "main.js.map": "static/js/main.cb84590a.js.map",
+  "static/media/BellfortRoughDemo.otf": "static/media/BellfortRoughDemo.2d55f3f9.otf",
+  "static/media/Cutive-Regular.ttf": "static/media/Cutive-Regular.0f5280ad.ttf",
+  "static/media/Raleway-Regular.ttf": "static/media/Raleway-Regular.580d0778.ttf",
   "static/media/big-ben.svg": "static/media/big-ben.cf9c4438.svg",
+  "static/media/dog.svg": "static/media/dog.3afca866.svg",
+  "static/media/london.jpeg": "static/media/london.d05dec46.jpeg",
   "static/media/sherlock.svg": "static/media/sherlock.83fe816c.svg"
 }
