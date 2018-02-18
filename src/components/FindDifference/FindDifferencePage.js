@@ -33,6 +33,11 @@ class FindDifferencePage extends Component {
     this.setState({visible: true, correct});
   };
 
+  isFinished = () => {
+    const {visible, postNumber} = this.state;
+    return postNumber === 1 && visible;
+  };
+
   next = () => {
     const {visible, postNumber} = this.state;
 
