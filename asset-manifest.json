@@ -1,15 +1,20 @@
 {
-  "main.css": "static/css/main.5f763875.css",
-  "main.css.map": "static/css/main.5f763875.css.map",
-  "main.js": "static/js/main.f2f0914c.js",
-  "main.js.map": "static/js/main.f2f0914c.js.map",
+  "main.css": "static/css/main.7b869b4a.css",
+  "main.css.map": "static/css/main.7b869b4a.css.map",
+  "main.js": "static/js/main.cfb7414a.js",
+  "main.js.map": "static/js/main.cfb7414a.js.map",
   "static/media/BellfortRoughDemo.otf": "static/media/BellfortRoughDemo.2d55f3f9.otf",
   "static/media/Cutive-Regular.ttf": "static/media/Cutive-Regular.0f5280ad.ttf",
   "static/media/Raleway-Regular.ttf": "static/media/Raleway-Regular.580d0778.ttf",
-  "static/media/big-ben.svg": "static/media/big-ben.cf9c4438.svg",
+  "static/media/big-ben.svg": "static/media/big-ben.0283759f.svg",
   "static/media/case-closed.png": "static/media/case-closed.1c19b4a2.png",
-  "static/media/dog.svg": "static/media/dog.3afca866.svg",
+  "static/media/dog.svg": "static/media/dog.27bb3f80.svg",
+  "static/media/latern.svg": "static/media/latern.0ded54f8.svg",
   "static/media/london.jpeg": "static/media/london.c0eccd4d.jpeg",
   "static/media/murder.svg": "static/media/murder.44e10492.svg",
-  "static/media/sherlock.svg": "static/media/sherlock.83fe816c.svg"
+  "static/media/order.svg": "static/media/order.1156ccd5.svg",
+  "static/media/person.svg": "static/media/person.a208c242.svg",
+  "static/media/question.svg": "static/media/question.3dcad85c.svg",
+  "static/media/sherlock.svg": "static/media/sherlock.83fe816c.svg",
+  "static/media/virus.svg": "static/media/virus.4339a00a.svg"
 }
