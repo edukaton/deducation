@@ -12,17 +12,20 @@ class Highlight extends Component {
     this.state = {showTip: false};
   }
 
-  toggleTip = () => this.setState({showTip: !this.state.showTip});
+  toggleTip = event => {
+    event.stopPropagation();
+    this.setState({showTip: !this.state.showTip});
+  };
 
   render() {
     const id = count++;
     const {showTip} = this.state;
     const {children, type, hint, visible, onClick} = this.props;
 
-    const discover = (e) => {
+    const discover = e => {
       onClick(e);
-      this.toggleTip();
-    }
+      this.toggleTip(e);
+    };
 
     return (
       <React.Fragment>
@@ -37,7 +40,9 @@ class Highlight extends Component {
             </GTip>
           )}
         <span
-          onClick={(visible && this.toggleTip) || (onClick && ((e) => discover(e)))}
+          onClick={
+            (visible && this.toggleTip) || (onClick && (e => discover(e)))
+          }
           className={
             visible
               ? `highlight highlight--${id} ${type ? `highlight--${type}` : ''}`
