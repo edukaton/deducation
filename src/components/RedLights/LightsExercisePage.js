@@ -3,9 +3,11 @@ import React, {Component} from 'react';
 import GSection from 'grommet/components/Section';
 import GHeading from 'grommet/components/Heading';
 import GParagraph from 'grommet/components/Paragraph';
+import GImage from 'grommet/components/Image';
 
 import Highlight from '../Highlight';
 import NavButtons from '../NavButtons';
+import virus from '../../assets/virus.svg';
 
 class LightsExercisePage extends Component {
   constructor(props) {
@@ -124,11 +126,12 @@ class LightsExercisePage extends Component {
         <GSection className="section post">
           <GHeading margin="medium" align="center" strong={true} className="heading">
             Przyczłapnik bulwulatora zaatakował Londyn!
+            <GImage src={virus} size="small" />
           </GHeading>
           <GParagraph className="paragraph" align="center" size="medium">
             {this.collapse(
               'Od tygodnia po Londynie szaleje zaraza Przyczłapnik Bulwulatora zbierając swoje ' +
-                'śmiertelne żniwa. Pochłonęła już',
+              'śmiertelne żniwa. Pochłonęła już',
             )}
             {this.error('tysiące ofiar.')}
             {this.error('Starsi mieszkańcy')}
@@ -159,7 +162,7 @@ class LightsExercisePage extends Component {
             {this.error('lekarza znanego')}
             {this.collapse(
               'z telewizji śniadaniowej, specjalizującego się w alternatywnych sposobach leczenia. ' +
-                'Sugeruje on',
+              'Sugeruje on',
             )}
             {this.error('w specjalnie opracowanym raporcie,')}
             {this.collapse(
@@ -171,7 +174,7 @@ class LightsExercisePage extends Component {
             {this.collapse('-')}
             {this.error(
               'raport bowiem wciąż jest tajny, a pełne grono pracujących nad nim ekspertów wciąż pozostaje ' +
-                'w ścisłej tajemnicy.',
+              'w ścisłej tajemnicy.',
             )}
           </GParagraph>
           <GParagraph className="paragraph" align="center" size="medium">

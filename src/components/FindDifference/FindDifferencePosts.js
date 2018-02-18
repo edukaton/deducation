@@ -9,8 +9,8 @@ export const postsByVisibility = visible => [
       heading: 'NIESAMOWITE ODKRYCIE BRYTYJSKICH NAUKOWCÓW!',
       content: (
         <React.Fragment>
-          Jeden z Londynu przez ponad połowę swojego życia spożywał liście
-          tytoniu. Dożył aż 103 lat. Możemy{' '}
+          W najnowszym wydaniu gazety dnia możemy przeczytać, że jeden z mieszkańców Londynu przez ponad połowę swojego życia spożywał liście
+          tytoniu. Dożył aż 103 lat. Rzadko kiedy ludzie dożywają wieku, w którym mogą poznać swoje prawnuki. Ów sędziwy wiek dowodzi więc{' '}
           <Highlight
             type="critical"
             hint="Przedstawiona treść jest tak zwanym dowodem anegdotycznym –
@@ -21,7 +21,7 @@ export const postsByVisibility = visible => [
             visible={visible}>
             wnioskować
           </Highlight>, iż ich spożywanie jest w stanie znacznie przedłużyć
-          średnią długość życia mieszkańców naszego miasta. Również nasz{' '}
+          średnią długość życia mieszkańców naszego miasta. Biorąc pod uwagę niskie koszty zakupu nikotyny, tym bardziej warto w nią inwestować. Jest to wydatek, który na pewno się zwróci. Również nasz{' '}
           <Highlight
             type="critical"
             hint="Powołanie się na regułę autorytetu. Polega ona na większej
@@ -41,11 +41,14 @@ export const postsByVisibility = visible => [
           o cechy charakteru i dotychczas podjęte decyzje przy jednoczesnym
           braku uwzględnienia wpływu czynników zewnętrznych i roli przypadku."
             visible={visible}>
-            spisku
+            spisku producentów papierosów elektronicznych.
           </Highlight>.
           <br />
           <br />
-          Żródło: precelek.pl
+          <span className="sign">PD.</span>
+          <br />
+          <br />
+          Bibliografia: www.precelek.pl
         </React.Fragment>
       ),
     },
@@ -113,7 +116,7 @@ export const postsByVisibility = visible => [
             hint="Wiele firm zatrudnia naukowców by przeprowadzali badania i
             publikowali ich wyniki. "
             visible={visible}>
-            zlecenie firmy Stramsung (producenta urządzeń multimedialnych)
+            zlecenie firmy Stramsung (wiodącego producenta urządzeń multimedialnych)
           </Highlight>{' '}
           przez badaczy Krzeczyńsky’ego, Ygrecki’ego, Spasss’a (2018). Za pomocą
           metody korelacyjnej na grupie{' '}
@@ -136,10 +139,10 @@ export const postsByVisibility = visible => [
             visible={visible}>
             wpływ
           </Highlight>{' '}
-          długości oglądania telewizji na inteligencję. Wyniki badania pokazały,
-          iż im wyższy jest poziom inteligencji u człowieka, tym więcej czasu
-          poświęca on na oglądanie telewizji. W odpowiedzi na badanie środowisko
-          naukowe zasugerowało jego powtórzenie na większej próbie. Jak donosi
+          długości oglądania programów telewizyjnych na poziom inteligencji. Uzyskane wyniki badania pokazały,
+          iż im wyższy jest współczynnik inteligencji u dorosłego człowieka, tym więcej czasu wolnego
+          spędza on na oglądanie telewizji. W odpowiedzi na badanie konserwatywne środowisko
+          naukowe zasugerowało powtórzenie eksperymentu na większej próbie poddanych analizie osób. Jak donsi czasopismo The
           Trimes, naukowcy{' '}
           <Highlight
             type="critical"
@@ -149,9 +152,9 @@ export const postsByVisibility = visible => [
             uzyskanych wyników. Pamiętaj: niezwykłe wnioski potrzebują
             niezwykłych dowodów!"
             visible={visible}>
-            nie udostępnili procedury badawczej
+            nie udostępnili szerszej publiczności procedury badawczej
           </Highlight>, twierdząc, iż przytoczone przez nich statystyki
-          potwierdziły założone hipotezy.
+          potwierdziły założone wcześniej hipotezy.
           <br />
           <br />
           Źródło: Krzeczyńsky, R., Ygrecki A. , Spasss C. (2018). Związek

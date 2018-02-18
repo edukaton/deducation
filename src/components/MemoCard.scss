@@ -31,6 +31,7 @@ $card-pad: 1em;
     backface-visibility: hidden;
     height: calc(#{$card-height} - 2 * #{$card-pad});
     width: 100%;
+    cursor: pointer;
 
     opacity: 80%;
 
@@ -44,14 +45,25 @@ $card-pad: 1em;
 
   &__face {
     transform: rotateY(180deg);
+
     &--quote {
       font-family: Cutive, sans-serif;
       font-style: italic;
+      font-size: 14px;
+
+      &:before {
+        content: url("../assets/person.svg");
+        height: 80px;
+        margin: 15px;
+      }
     }
   }
 
   &__back {
     z-index: 2;
+    background-image: url('../assets/question.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--selected {
