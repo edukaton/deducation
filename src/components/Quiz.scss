@@ -1,0 +1,49 @@
+@import '../consts.scss';
+
+.quiz {
+  font-family: Cutive, serif;
+
+  &__question {
+    margin-top: 100px;
+    display: flex;
+  }
+
+  &__content,
+  &__description {
+    padding: 1em;
+    background-color: $color-wild-sand;
+  }
+
+  &__description {
+    margin-top: 3em;
+  }
+
+  &__next {
+    width: 100px;
+    padding: 1em;
+    text-align: center;
+    margin: 3em auto;
+    border-radius: 10px 10px 10px 10px;
+    background-color: $color-cello;
+    color: white;
+  }
+
+  &__answer {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &--legit {
+      background-color: $color-ok;
+      color: white;
+      border-radius: 10px 0 0 10px;
+    }
+    &--clickbait {
+      background-color: $color-critical;
+      color: white;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}
