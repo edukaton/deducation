@@ -72,7 +72,7 @@ class App extends Component {
             </React.Fragment>
           </Router>
           <GFooter className="footer">
-            <GAnchor align="center" href="/#/zrodla">Źródła</GAnchor>
+            <GAnchor align="center" href="/deducation/#/zrodla">Źródła</GAnchor>
           </GFooter>
         </GArticle>
       </GApp>
